@@ -116,10 +116,11 @@
       localStorage.setItem('spelers', JSON.stringify(spelers));
 
       if (huidigeSpeler < aantalSpelers) {
-        window.location.href = `/pages/aanmelden/aanmelden.html?spelers=${aantalSpelers}&speler=${huidigeSpeler + 1}`;
+        // Stay on the same page, increment speler parameter
+        window.location.href = `${window.location.pathname}?spelers=${aantalSpelers}&speler=${huidigeSpeler + 1}`;
       } else {
         // Start spel
-        window.location.href = `/pages/spel/spel.html`;
+        window.location.href = "../spel/spel.html";
       }
     });
   </script>

@@ -17,9 +17,15 @@
     let progressBar;
     let elephant;
 
+
+    let baseUrl = window.location.origin;
+    if(!baseUrl.includes("127.0.0.1")){
+        baseUrl = baseUrl + "/boardgame-justine-marine"
+    }
+
     async function loadChildrenQuestions(){
         try {
-            const response = await fetch('/assets/questions/childrenQuestions.json');
+            const response = await fetch(baseUrl + '/assets/questions/childrenQuestions.json');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -32,7 +38,7 @@
 
     async function loadAdultsQuestions(){
         try {
-            const response = await fetch('/assets/questions/adultQuestions.json');
+            const response = await fetch(baseUrl + '/assets/questions/adultQuestions.json');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
