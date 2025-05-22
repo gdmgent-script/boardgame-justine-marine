@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mother Nature - Spel</title>
+  <link rel="stylesheet" href="./spelStyles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xxg6rmr.css">
+  <script src="./spelScript.js"></script>
+</head>
+
+<body>
+
+  <div class="vraag-container show">
+    <div class="progress-wrapper">
+      <div class="elephant" id="elephant">
+        🐘
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+
+    <h2 id="spelerNaam">Deze vraag is voor </h2>
+    <p id="vraagText">Vraag komt hier </p>
+    <div id="antwoorden"></div>
+    <button onclick="checkAnswer()">Bekijk antwoord</button>
+    <button onclick="skipQuestion()"> Skip</button>
+  </div>
+
+  <div class="antwoord-container">
+    <p id="resultaat"></p>
+    <p id="correctie"></p>
+    <p id="wistjedatje">Wist je dat...</p>
+    <button onclick="nextQuestion()">Volgende vraag</button>
+  </div>
+
+  <button class="popup-button" onclick="openPopup()">
+    <i class="fas fa-scroll"></i>
+  </button>
+
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+      <h2>SPELVERLOOP</h2>
+      <p>Het spel verloopt in rondes. Elke speler voert in zijn/haar beurt de volgende stappen uit:
+        <br>De speler moet een vraag beantwoorden:
+        Vraag correct beantwoord: <br> De speler kiest één van de volgende acties:
+        Een slecht element uit een continent verwijderen of een goed element toevoegen.
+        Een kanskaart trekken en de instructies volgen.
+        <br>Vraag fout beantwoord: De speler moet een slecht element plaatsen of een goed element verwijderen. Als er al
+        overal slechte elementen liggen, moet de speler de beurt overslaan.
+        <br><br> Een continent doorloopt 3 fasen:
+      <ol class="popup-content-list">
+        <li>Slecht (startfase, oranje puzzelstukken)</li>
+        <li>Neutraal (tussenfase)</li>
+        <li>Goed (eindfase, groene puzzelstukken)</li>
+      </ol>
+      Het spel wordt gespeeld met rondes. Als een speler een beurt moet overslaan, kan hij/zij dit bevestigen via de ‘skip’-knop op de website. 
+      <br><br>
+      Het spel eindigt zodra alle continenten in de eindfase zijn. Hun gehele continent is groen. De speler die het eerst een alle groene puzzelstukken heeft, wint.
+      <br>Alternatief: Het spel kan eindigen bij een vooraf bepaald aantal rondes.
+
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

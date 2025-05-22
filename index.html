@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mother Nature - Start</title>
+  <link rel="stylesheet" href="https://use.typekit.net/xxg6rmr.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('/assets/images/startpagina-2.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      /* Zet de richting op kolom = onder elkaar */
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>HOEVEEL SPELERS DOEN ER MEE?</h1>
+  <div class="players-container" id="players">
+    <!-- Speler icoontjes -->
+  </div>
+  <button class="button" id="startBtn" disabled>GA NAAR AANMELDEN</button>
+
+
+  <script>
+    const playersContainer = document.getElementById('players');
+    const startBtn = document.getElementById('startBtn');
+    let selectedIcon = null;
+
+    for (let i = 2; i <= 7; i++) {
+      const icon = document.createElement('div');
+      icon.classList.add('player-icon');
+      icon.innerText = i;
+      icon.dataset.count = i;
+
+      icon.addEventListener('click', () => {
+        if (selectedIcon === icon) {
+          icon.classList.remove('selected');
+          selectedIcon = null;
+          startBtn.disabled = true;
+        } else {
+          if (selectedIcon) {
+            selectedIcon.classList.remove('selected');
+          }
+          icon.classList.add('selected');
+          selectedIcon = icon;
+          startBtn.disabled = false;
+        }
+      });
+
+      playersContainer.appendChild(icon);
+    }
+
+    startBtn.addEventListener('click', () => {
+      const playerCount = selectedIcon ? selectedIcon.dataset.count : 0;
+      window.location.href = `/pages/aanmelden/aanmelden.html?spelers=${playerCount}`;
+    });
+  </script>
+</body>
+
+</html>

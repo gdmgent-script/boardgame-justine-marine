@@ -1,0 +1,120 @@
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3f1428;
+}
+
+
+.start-knop {
+  color: #5b3348;
+  background-color: #7ac1bc;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+h1 {
+  color: #E65B27;
+  font-size: 2rem;
+}
+
+.players-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.player-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #7ac1bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.player-icon:hover{
+  cursor: pointer;
+}
+
+.player-icon.selected {
+  border: 2px solid #d4704f;
+  background-color: #d4704f;
+}
+
+.button {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #5b3348;
+  background-color: #7ac1bc;
+  padding: 5px 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #d4704f;
+  color: #3f1428;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* index */
+
+.start-knop {
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.start-knop:hover {
+  background-color: #d4704f;
+}
+
+/* aanmeldpagina */
+
+.container {
+  width: 500px;
+  margin: auto;
+  padding: 3rem;
+  background-color:#cfdddf;
+  border-radius: 7rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #E65B27;
+}
+
+input,
+select {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 1rem;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid #d3d5cb;
+  background-color:#7ac1bc;
+  color:#5b3348;
+}

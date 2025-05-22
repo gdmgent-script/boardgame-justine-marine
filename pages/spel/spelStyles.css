@@ -1,0 +1,197 @@
+body {
+  font-family: 'poppins', sans-serif;
+  padding: 2rem;
+  background: #e8f6f3;
+  text-align: center;
+  background-color: #5d3847;
+  background-image: url('/assets/images/spelpagina.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.vraag{
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #e55525;
+}
+
+.datje-heading {
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+  color: #3f1428;
+  font-size: 1.2rem;
+}
+
+.show {
+  display: block !important;
+}
+
+.vraag-container {
+  display: none;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 35%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#antwoorden {
+  width: 100%;
+}
+
+.antwoord {
+  all: unset;
+  width: calc(100% - 2rem);
+  display: block;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #7ac1bc;
+  cursor: pointer;
+}
+
+.antwoord[disabled] {
+  background-color: gray
+}
+
+.antwoord.selected {
+  background-color: #825366;
+  border: 2px solid #1b4332;
+}
+
+.antwoord-container {
+  display: none;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: auto;
+  max-width: 35%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.juist {
+  color: #267772;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.fout {
+  color: #e55525;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#timer {
+  font-weight: bold;
+  color: #2d6a4f;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #7ac1bc;
+  color: #3f1428;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d4704f;
+}
+
+#skipBtn {
+  background-color: #aaaaaa;
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #e55525;
+  width: 100%;
+  transition: width 1s linear;
+  transform-origin: right;
+}
+
+.elephant {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 24px;
+  transition: right 1s linear;
+}
+
+/* Bottom-left button */
+.popup-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 16px;
+  font-size: 24px;
+  background-color: #38716D;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Popup overlay (hidden by default) */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Popup content box */
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Close (X) button */
+.close-button {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-content-list {
+  list-style-position: inside;
+}

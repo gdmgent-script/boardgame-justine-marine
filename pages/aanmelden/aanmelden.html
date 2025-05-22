@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aanmelden Speler</title>
+  <link rel="stylesheet" href="https://use.typekit.net/xxg6rmr.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="./aanmeldenStyles.css">
+</head>
+
+
+<body>
+  <div class="container">
+    <h1 id="titel">AANMELDEN SPELER</h1>
+    <form id="aanmeldForm">
+      <label for="naam">NAAM SPELER</label>
+      <input type="text" id="naam" required>
+
+      <label for="leeftijd">LEEFTIJD SPELER</label>
+      <input type="number" id="leeftijd" required>
+
+      <label for="continent">CONTINENT SPELER</label>
+      <select id="continent" required>
+        <option value="">-- Kies een continent --</option>
+      </select>
+
+      <div id="continent2Div" style="display: none;">
+        <label for="continent2">CONTINENT SPELER</label>
+        <select id="continent2" required>
+          <option value="">-- Kies een continent --</option>
+        </select>
+      </div>
+      
+
+      <button class="button">VOLGENDE SPELER</button>
+    </form>
+  </div>
+
+  <script>
+    const continent2Div = document.getElementById("continent2Div");
+    const form = document.getElementById('aanmeldForm');
+    const queryParams = new URLSearchParams(window.location.search);
+    
+    let spelers = JSON.parse(localStorage.getItem('spelers')) || [];
+    const aantalSpelers = parseInt(queryParams.get('spelers'), 10);
+    localStorage.setItem("aantalSpelers", aantalSpelers);
+    let huidigeSpeler = parseInt(queryParams.get('speler'), 10) || 1;
+    
+    const allContinents = ["Afrika" ,"Antarctica","Azië","Europa","Noord-Amerika","Zuid-Amerika","Oceanië"];
+    const pickedContinents = new Set(spelers.map(player => player.continent));
+    const availableContinents = allContinents.filter(continent => !pickedContinents.has(continent));
+
+    
+    const continentSelect1 = document.getElementById("continent");
+    const continentSelect2 = document.getElementById("continent2");
+    
+    // continentSelect1.addEventListener("change", () => syncSelects(continentSelect1, continentSelect2))
+    // continentSelect2.addEventListener("change", () => syncSelects(continentSelect2, continentSelect1))
+    
+    setupSelects(aantalSpelers);
+
+    function setupSelects(playersCount) {
+      fillContinents(continentSelect1, null);
+      if (aantalSpelers > 3) {
+        continent2Div.style.display = 'none';
+      } else {
+        continent2Div.style.display = 'block';
+        fillContinents(continentSelect2, null);
+      }
+    };
+
+    function fillContinents(dropdown, selectedContinent){
+      dropdown.innerHTML = `<option value="">-- Kies een continent --</option>`;
+      
+      availableContinents.forEach((text, index) => {
+        if (text === selectedContinent) return;
+
+        const option = document.createElement('option');
+        option.value = text;
+        option.textContent = text;
+        dropdown.appendChild(option);
+      });
+    }
+
+    function syncSelects(changedDropdown, otherDropdown){
+      const selectedValue = changedDropdown.value || null;
+      fillContinents(otherDropdown, selectedValue);
+    }
+    
+    // Reset spelers bij speler 1
+    if (huidigeSpeler === 1) {
+      localStorage.removeItem('spelers');
+    };
+
+    document.getElementById('titel').innerText = `AANMELDEN SPELER ${huidigeSpeler}`;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const naam = document.getElementById('naam').value.trim();
+      const leeftijd = parseInt(document.getElementById('leeftijd').value);
+      let continent = continentSelect1.value;
+
+      // Check of continent al gekozen is
+      if (spelers.some(s => s.continent === continent)) {
+        alert(`Het continent ${continent} is al gekozen door een andere speler. Kies een ander continent.`);
+        return;
+      }
+
+      spelers.push({ naam, leeftijd, continent });
+      if(aantalSpelers <= 3){
+        continent = continentSelect2.value
+        spelers.push({ naam, leeftijd, continent });
+      }
+      localStorage.setItem('spelers', JSON.stringify(spelers));
+
+      if (huidigeSpeler < aantalSpelers) {
+        window.location.href = `/pages/aanmelden/aanmelden.html?spelers=${aantalSpelers}&speler=${huidigeSpeler + 1}`;
+      } else {
+        // Start spel
+        window.location.href = `/pages/spel/spel.html`;
+      }
+    });
+  </script>
+</body>
+</html>

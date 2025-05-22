@@ -1,0 +1,566 @@
+[
+    {
+    "vraag": "Welk gas draagt het meest bij aan de opwarming van de aarde?",
+    "opties": ["Zuurstof", "Koolstofdioxide (CO₂)", "Stikstof"],
+    "juist": "Koolstofdioxide (CO₂)",
+    "weetje": "CO₂ komt vooral vrij door het verbranden van fossiele brandstoffen, zoals olie en gas."
+  },
+  {
+    "vraag": "Hoeveel werelddoelen (SDG’s) zijn er vastgesteld door de Verenigde Naties?",
+    "opties": ["10", "17", "25"],
+    "juist": "17",
+    "weetje": "Deze doelen moeten voor 2030 bijdragen aan een duurzame en rechtvaardige wereld."
+  },
+  {
+    "vraag": "Wat is de grootste regenwoud ter wereld?",
+    "opties": ["Congo-woud", "Daintree-woud", "Amazonewoud"],
+    "juist": "Amazonewoud",
+    "weetje": "Het Amazonewoud is zo groot dat het ook wel 'de longen van de aarde' wordt genoemd."
+  },
+  {
+    "vraag": "Wat betekent biodiversiteit?",
+    "opties": ["De hoeveelheid regen per jaar", "De variatie aan planten en dieren", "De groei van bomen"],
+    "juist": "De variatie aan planten en dieren",
+    "weetje": "Hoe groter de biodiversiteit, hoe stabieler een ecosysteem is."
+  },
+  {
+    "vraag": "Wat is een duurzame energiebron?",
+    "opties": ["Steenkool", "Windenergie", "Aardolie"],
+    "juist": "Windenergie",
+    "weetje": "Windenergie raakt nooit op en stoot geen CO₂ uit."
+  },
+  {
+    "vraag": "Welke planeet staat het dichtst bij de zon?",
+    "opties": ["Aarde", "Mercurius", "Venus"],
+    "juist": "Mercurius",
+    "weetje": "Mercurius heeft geen atmosfeer om warmte vast te houden."
+  },
+  {
+    "vraag": "Waarom zijn bijen belangrijk voor de natuur?",
+    "opties": ["Ze maken honing voor mensen", "Ze bestuiven planten en bloemen", "Ze eten schadelijke insecten"],
+    "juist": "Ze bestuiven planten en bloemen",
+    "weetje": "Zonder bijen zouden veel groenten en fruitsoorten verdwijnen."
+  },
+  {
+    "vraag": "Wat is de grootste oorzaak van ontbossing wereldwijd?",
+    "opties": ["Bouw van huizen", "Winning van goud", "Aanleg van landbouwgrond"],
+    "juist": "Aanleg van landbouwgrond",
+    "weetje": "Vooral voor soja en rundvlees worden veel bossen gekapt."
+  },
+  {
+    "vraag": "Welk dier is het grootste ter wereld?",
+    "opties": ["Afrikaanse olifant", "Blauwe vinvis", "Witte haai"],
+    "juist": "Blauwe vinvis",
+    "weetje": "De blauwe vinvis kan wel 30 meter lang worden en weegt meer dan 100 ton."
+  },
+  {
+    "vraag": "Wat kun je doen om water te besparen?",
+    "opties": ["Douchen in plaats van baden", "Tuin sproeien in de middag", "Kleding vaker wassen"],
+    "juist": "Douchen in plaats van baden",
+    "weetje": "Een bad gebruikt gemiddeld 2 keer zoveel water als een douche."
+  },
+
+
+
+  {
+    "vraag": "Welk van deze afvalstoffen hoort bij GFT-afval?",
+    "opties": ["Theezakje", "Plastic zakje", "Glazen pot"],
+    "juist": "Theezakje",
+    "weetje": "Let op: theezakjes met kunststof horen bij restafval."
+  },
+  {
+    "vraag": "Wat is het broeikaseffect?",
+    "opties": ["De verwarming van kassen voor groenten", "De opwarming van de aarde door gassen in de atmosfeer", "Het smelten van gletsjers"],
+    "juist": "De opwarming van de aarde door gassen in de atmosfeer",
+    "weetje": "Zonder het broeikaseffect zou het te koud zijn om te leven op aarde."
+  },
+  {
+    "vraag": "Hoeveel procent van het aardoppervlak is bedekt met water?",
+    "opties": ["Ongeveer 50%", "Ongeveer 70%", "Ongeveer 90%"],
+    "juist": "Ongeveer 70%",
+    "weetje": "Slechts 2,5% daarvan is zoet water, en nog minder is direct bruikbaar."
+  },
+  {
+    "vraag": "Wat is een ecologische voetafdruk?",
+    "opties": ["Hoe groot je schoenen zijn", "Hoeveel natuur je gebruikt voor jouw levensstijl", "Hoeveel bomen je plant"],
+    "juist": "Hoeveel natuur je gebruikt voor jouw levensstijl",
+    "weetje": "Hoe minder energie en spullen je gebruikt, hoe kleiner je voetafdruk."
+  },
+  {
+    "vraag": "Wat doet een warmtepomp?",
+    "opties": ["Het maakt koude lucht", "Het warmt je huis op zonder gas", "Het verkoelt water"],
+    "juist": "Het warmt je huis op zonder gas",
+    "weetje": "Een warmtepomp gebruikt warmte uit de lucht, grond of water."
+  },
+  {
+    "vraag": "Welke van deze dieren is met uitsterven bedreigd?",
+    "opties": ["Huiskat", "Panda", "Eekhoorn"],
+    "juist": "Panda",
+    "weetje": "Dankzij beschermingsprogramma’s gaat het nu iets beter met de panda."
+  },
+  {
+    "vraag": "Wat is de grootste oorzaak van plastic in de oceaan?",
+    "opties": ["Afval van schepen", "Rivieren die plastic meedragen", "Onderwater vulkanen"],
+    "juist": "Rivieren die plastic meedragen",
+    "weetje": "Grote rivieren als de Yangtze voeren miljoenen kilo’s plastic naar zee."
+  },
+  {
+    "vraag": "Welk werelddoel gaat over ‘Schoon water en sanitair’?",
+    "opties": ["Doel 3", "Doel 6", "Doel 9"],
+    "juist": "Doel 6",
+    "weetje": "Meer dan 2 miljard mensen hebben nog steeds geen schoon drinkwater."
+  },
+  {
+    "vraag": "Wat kun je het beste doen met oude kleding?",
+    "opties": ["Weggooien bij het restafval", "Verbranden", "Doneren of recyclen"],
+    "juist": "Doneren of recyclen",
+    "weetje": "Kleding kan vaak opnieuw gebruikt of verwerkt worden tot nieuwe stoffen."
+  },
+  {
+    "vraag": "Wat is het effect van bomen planten op het klimaat?",
+    "opties": ["Geen effect", "Ze helpen CO₂ uit de lucht halen", "Ze maken het warmer"],
+    "juist": "Ze helpen CO₂ uit de lucht halen",
+    "weetje": "Bomen slaan CO₂ op tijdens de fotosynthese en helpen zo klimaatverandering te vertragen."
+  },
+
+
+
+  {
+    "vraag": "Wat is de belangrijkste reden waarom de zeespiegel stijgt?",
+    "opties": ["Meer regenval", "Smeltende ijskappen", "Meer boten in de zee"],
+    "juist": "Smeltende ijskappen",
+    "weetje": "Door het smelten van ijs op Groenland en Antarctica stijgt de zeespiegel wereldwijd."
+  },
+  {
+    "vraag": "Welk dier wordt bedreigd door plastic rietjes in de oceaan?",
+    "opties": ["Schildpad", "Dolfijn", "Octopus"],
+    "juist": "Schildpad",
+    "weetje": "Schildpadden kunnen plastic rietjes aanzien voor voedsel en erin stikken."
+  },
+  {
+    "vraag": "Wat is een circulaire economie?",
+    "opties": ["Alles draait op zonne-energie", "Alles wordt gemaakt en weggegooid", "Afval wordt opnieuw gebruikt als grondstof"],
+    "juist": "Afval wordt opnieuw gebruikt als grondstof",
+    "weetje": "In een circulaire economie bestaat er eigenlijk geen afval meer."
+  },
+  {
+    "vraag": "Welk land stoot het meeste CO₂ uit per inwoner?",
+    "opties": ["India", "Qatar", "Duitsland"],
+    "juist": "Qatar",
+    "weetje": "Hoewel Qatar klein is, is het gebruik van fossiele brandstoffen per persoon heel hoog."
+  },
+  {
+    "vraag": "Wat is erosie?",
+    "opties": ["Het groeien van planten", "Het wegslijten van aarde of rotsen", "Het ontstaan van aardbevingen"],
+    "juist": "Het wegslijten van aarde of rotsen",
+    "weetje": "Erosie wordt vaak veroorzaakt door wind of stromend water."
+  },
+  {
+    "vraag": "Welk soort afval verteert het langzaamst?",
+    "opties": ["Appelschil", "Papieren zak", "Plastic fles"],
+    "juist": "Plastic fles",
+    "weetje": "Een plastic fles kan meer dan 450 jaar overleven in de natuur."
+  },
+  {
+    "vraag": "Wat betekent de afkorting SDG?",
+    "opties": ["Super Duidelijk Gebod", "Sustainable Development Goals", "Samenwerking Door Gemeenten"],
+    "juist": "Sustainable Development Goals",
+    "weetje": "In het Nederlands noemen we ze de duurzame ontwikkelingsdoelen."
+  },
+  {
+    "vraag": "Hoe dragen koeien bij aan het broeikaseffect?",
+    "opties": ["Door hun mest", "Door het methaan in hun boeren en winden", "Door hun geslurp van water"],
+    "juist": "Door het methaan in hun boeren en winden",
+    "weetje": "Methaan is 25 keer sterker dan CO₂ als broeikasgas."
+  },
+  {
+    "vraag": "Welke energiebron is NIET hernieuwbaar?",
+    "opties": ["Zonne-energie", "Aardgas", "Waterkracht"],
+    "juist": "Aardgas",
+    "weetje": "Aardgas is fossiel en raakt op, zonne- en waterkracht niet."
+  },
+  {
+    "vraag": "Wat is ‘urban farming’?",
+    "opties": ["Boerderijen op het platteland", "Het telen van gewassen in of op gebouwen in de stad", "Het eten van fastfood in de stad"],
+    "juist": "Het telen van gewassen in of op gebouwen in de stad",
+    "weetje": "Urban farming helpt om steden groener en gezonder te maken."
+  },
+
+
+
+  {
+    "vraag": "Welke boom is typisch voor een tropisch regenwoud?",
+    "opties": ["Eik", "Banaanboom", "Mahonieboom"],
+    "juist": "Mahonieboom",
+    "weetje": "Mahoniehout is gewild, maar overmatige kap bedreigt de soort."
+  },
+  {
+    "vraag": "Wat is een ecoduct?",
+    "opties": ["Een tunnel voor auto's", "Een brug voor wilde dieren", "Een waterval in een rivier"],
+    "juist": "Een brug voor wilde dieren",
+    "weetje": "Ecoducten helpen dieren veilig snelwegen over te steken."
+  },
+  {
+    "vraag": "Wat is het doel van Earth Hour?",
+    "opties": ["Donaties inzamelen voor bomen", "Eén uur lang licht uitdoen om energie te besparen", "De langste dag van het jaar vieren"],
+    "juist": "Eén uur lang licht uitdoen om energie te besparen",
+    "weetje": "Elk jaar doen miljoenen mensen wereldwijd mee aan Earth Hour."
+  },
+  {
+    "vraag": "Wat zijn fossiele brandstoffen?",
+    "opties": ["Olie, steenkool en gas", "Zonnepanelen", "Bomen"],
+    "juist": "Olie, steenkool en gas",
+    "weetje": "Fossiele brandstoffen zijn ontstaan uit resten van planten en dieren van miljoenen jaren oud."
+  },
+  {
+    "vraag": "Waarom zijn koralen belangrijk?",
+    "opties": ["Ze zien er mooi uit", "Ze filteren water", "Ze zijn leefgebied voor veel zeedieren"],
+    "juist": "Ze zijn leefgebied voor veel zeedieren",
+    "weetje": "Koraalriffen worden ook wel de regenwouden van de zee genoemd."
+  },
+  {
+    "vraag": "Welk dier is een echte indicator van een schoon milieu?",
+    "opties": ["Rat", "Slak", "Kikker"],
+    "juist": "Kikker",
+    "weetje": "Kikkers zijn gevoelig voor vervuiling, dus als ze verdwijnen is dat een slecht teken."
+  },
+  {
+    "vraag": "Hoe helpt composteren het milieu?",
+    "opties": ["Het maakt planten sneller ziek", "Het vermindert afval en voedt de bodem", "Het houdt de lucht koel"],
+    "juist": "Het vermindert afval en voedt de bodem",
+    "weetje": "Compost maken van GFT-afval is een goede manier om kringlopen te sluiten."
+  },
+  {
+    "vraag": "Welke van deze producten heeft de grootste ecologische voetafdruk?",
+    "opties": ["Appel", "Kaas", "Tomaat"],
+    "juist": "Kaas",
+    "weetje": "Voor kaas is veel melk en dus veel energie en water nodig."
+  },
+  {
+    "vraag": "Wat kun je het beste doen met oude batterijen?",
+    "opties": ["In de prullenbak gooien", "Begraven in de tuin", "Inleveren bij een inzamelpunt"],
+    "juist": "Inleveren bij een inzamelpunt",
+    "weetje": "Batterijen bevatten schadelijke stoffen en moeten apart verwerkt worden."
+  },
+  {
+    "vraag": "Wat is het belangrijkste doel van SDG 13?",
+    "opties": ["Klimaatactie ondernemen", "Meer technologie ontwikkelen", "Armoede verminderen"],
+    "juist": "Klimaatactie ondernemen",
+    "weetje": "SDG 13 roept landen op om maatregelen te nemen tegen klimaatverandering."
+  },
+
+
+
+  {
+    "vraag": "Wat is microplastic?",
+    "opties": ["Een soort zacht rubber", "Kleine stukjes plastic die in het milieu belanden", "Plastic dat smelt in water"],
+    "juist": "Kleine stukjes plastic die in het milieu belanden",
+    "weetje": "Microplastics komen onder andere van slijtage van kleding en autobanden."
+  },
+  {
+    "vraag": "Wat is de oorzaak van ocean acidificatie (verzuring)?",
+    "opties": ["Te veel visvangst", "Afval in de zee", "CO₂ die oplost in zeewater"],
+    "juist": "CO₂ die oplost in zeewater",
+    "weetje": "Door verzuring kunnen schelpdieren en koralen moeilijker groeien."
+  },
+  {
+    "vraag": "Wat zijn de gevolgen van ontbossing?",
+    "opties": ["Meer biodiversiteit", "Minder CO₂ in de lucht", "Verlies van leefgebied voor dieren"],
+    "juist": "Verlies van leefgebied voor dieren",
+    "weetje": "Ontbossing bedreigt miljoenen plant- en diersoorten."
+  },
+  {
+    "vraag": "Wat is de beste manier om voedselverspilling te verminderen?",
+    "opties": ["Meer kopen", "Restjes weggooien", "Beter plannen en restjes gebruiken"],
+    "juist": "Beter plannen en restjes gebruiken",
+    "weetje": "Elk jaar wordt wereldwijd een derde van al het voedsel verspild."
+  },
+  {
+    "vraag": "Welke activiteit veroorzaakt de meeste CO₂-uitstoot?",
+    "opties": ["Vliegen", "Douchen", "Fietsen"],
+    "juist": "Vliegen",
+    "weetje": "Vliegen is per kilometer de meest vervuilende vorm van vervoer."
+  },
+  {
+    "vraag": "Wat zijn hernieuwbare grondstoffen?",
+    "opties": ["Materialen die oneindig beschikbaar zijn", "Grondstoffen die uit fossielen komen", "Materialen die niet meer worden gebruikt"],
+    "juist": "Materialen die oneindig beschikbaar zijn",
+    "weetje": "Voorbeelden zijn hout, wol en bioplastics – mits goed beheerd."
+  },
+  {
+    "vraag": "Wat betekent klimaatadaptatie?",
+    "opties": ["Aanpassen aan de gevolgen van klimaatverandering", "Het klimaat veranderen", "Extra verwarming gebruiken in huis"],
+    "juist": "Aanpassen aan de gevolgen van klimaatverandering",
+    "weetje": "Voorbeelden zijn dijken verhogen of huizen beter isoleren tegen hitte."
+  },
+  {
+    "vraag": "Wat betekent fairtrade?",
+    "opties": ["Goedkope producten kopen", "Producten uit de buurt", "Eerlijke handel waarbij boeren een eerlijke prijs krijgen"],
+    "juist": "Eerlijke handel waarbij boeren een eerlijke prijs krijgen",
+    "weetje": "Fairtrade zorgt ervoor dat boeren en arbeiders in ontwikkelingslanden beter leven."
+  },
+  {
+    "vraag": "Wat is de grootste oorzaak van klimaatverandering door de mens?",
+    "opties": ["Zonnevlekken", "Gebruik van fossiele brandstoffen", "Vulkaanuitbarstingen"],
+    "juist": "Gebruik van fossiele brandstoffen",
+    "weetje": "Het verbranden van olie, kolen en gas veroorzaakt veel CO₂-uitstoot."
+  },
+  {
+    "vraag": "Wat kun je doen om je ecologische voetafdruk te verkleinen?",
+    "opties": ["Meer vlees eten", "Vaker de auto nemen", "Lokaal en plantaardig eten"],
+    "juist": "Lokaal en plantaardig eten",
+    "weetje": "Lokaal en plantaardig eten vermindert transport en uitstoot."
+  },
+
+
+
+  {
+    "vraag": "Wat is een oorzaak van het verdwijnen van bijen?",
+    "opties": ["Te veel bloemen", "Gebruik van pesticiden", "Regenbuien"],
+    "juist": "Gebruik van pesticiden",
+    "weetje": "Bestrijdingsmiddelen kunnen bijen verzwakken of doden."
+  },
+  {
+    "vraag": "Wat is een goed alternatief voor plastic zakjes?",
+    "opties": ["Papieren zakjes", "Herbruikbare stoffen tasjes", "Aluminiumfolie"],
+    "juist": "Herbruikbare stoffen tasjes",
+    "weetje": "Herbruikbare tasjes gaan veel langer mee en zorgen voor minder afval."
+  },
+  {
+    "vraag": "Welke grondstof wordt vaak gewonnen in tropische regenwouden en bedreigt het milieu?",
+    "opties": ["Goud", "Koper", "Ijzer"],
+    "juist": "Goud",
+    "weetje": "Goudwinning veroorzaakt vaak boskap, vervuiling en verlies van biodiversiteit."
+  },
+  {
+    "vraag": "Hoeveel plastic wordt wereldwijd jaarlijks geproduceerd (bij benadering)?",
+    "opties": ["30 miljoen ton", "100 miljoen ton", "400 miljoen ton"],
+    "juist": "400 miljoen ton",
+    "weetje": "Veel van dit plastic wordt slechts één keer gebruikt en belandt in de natuur."
+  },
+  {
+    "vraag": "Wat is duurzame landbouw?",
+    "opties": ["Landbouw die veel kunstmest gebruikt", "Landbouw die rekening houdt met natuur en milieu", "Landbouw met hoge winst"],
+    "juist": "Landbouw die rekening houdt met natuur en milieu",
+    "weetje": "Duurzame landbouw beschermt de bodem, het water en de biodiversiteit."
+  },
+  {
+    "vraag": "Wat betekent recycleren?",
+    "opties": ["Spullen weggooien", "Van afval nieuwe grondstoffen maken", "Gebruiken zonder iets aan te passen"],
+    "juist": "Van afval nieuwe grondstoffen maken",
+    "weetje": "Recyclage bespaart energie en grondstoffen."
+  },
+  {
+    "vraag": "Welk vervoermiddel is het meest milieuvriendelijk?",
+    "opties": ["Fiets", "Auto", "Vliegtuig"],
+    "juist": "Fiets",
+    "weetje": "Fietsen veroorzaakt geen CO₂-uitstoot en is ook goed voor je gezondheid."
+  },
+  {
+    "vraag": "Wat is een windturbine?",
+    "opties": ["Een apparaat dat lucht zuivert", "Een molen die wind omzet in elektriciteit", "Een koelinstallatie"],
+    "juist": "Een molen die wind omzet in elektriciteit",
+    "weetje": "Windenergie is schoon, hernieuwbaar en raakt nooit op."
+  },
+  {
+    "vraag": "Welke van deze materialen is het best recycleerbaar?",
+    "opties": ["Plastic", "Aluminium", "Piepschuim"],
+    "juist": "Aluminium",
+    "weetje": "Aluminium kan bijna eindeloos gerecycled worden zonder kwaliteitsverlies."
+  },
+  {
+    "vraag": "Welk dier wordt vaak gebruikt als symbool voor klimaatverandering?",
+    "opties": ["IJsbeer", "Kameel", "Zeehond"],
+    "juist": "IJsbeer",
+    "weetje": "IJsberen verliezen hun leefgebied doordat het ijs op de Noordpool smelt."
+  },
+
+
+
+  {
+    "vraag": "Wat is een belangrijke functie van wetlands (moerassen)?",
+    "opties": ["Ze veroorzaken overstromingen", "Ze zuiveren water en zijn leefgebied voor dieren", "Ze produceren veel CO₂"],
+    "juist": "Ze zuiveren water en zijn leefgebied voor dieren",
+    "weetje": "Wetlands zijn cruciaal voor biodiversiteit én klimaatbescherming."
+  },
+  {
+    "vraag": "Wat is een ‘klimaatvluchteling’?",
+    "opties": ["Iemand die graag in de zon leeft", "Iemand die vlucht vanwege extreme weersomstandigheden", "Een toerist op vakantie"],
+    "juist": "Iemand die vlucht vanwege extreme weersomstandigheden",
+    "weetje": "Door droogte, overstromingen en stormen raken steeds meer mensen ontheemd."
+  },
+  {
+    "vraag": "Wat is het belangrijkste doel van SDG 7?",
+    "opties": ["Schone energie voor iedereen", "Minder water gebruiken", "Meer internettoegang"],
+    "juist": "Schone energie voor iedereen",
+    "weetje": "SDG 7 wil toegang tot betaalbare, betrouwbare en duurzame energie."
+  },
+  {
+    "vraag": "Wat is een belangrijk voordeel van vegetarisch eten voor het milieu?",
+    "opties": ["Meer transport nodig", "Minder water en grondgebruik", "Meer afval"],
+    "juist": "Minder water en grondgebruik",
+    "weetje": "De productie van vlees kost veel meer energie, water en land dan plantaardig voedsel."
+  },
+  {
+    "vraag": "Wat betekent 'hergebruik'?",
+    "opties": ["Afval verbranden", "Een product opnieuw gebruiken", "Iets in de natuur achterlaten"],
+    "juist": "Een product opnieuw gebruiken",
+    "weetje": "Hergebruik vermindert afval en de nood aan nieuwe grondstoffen."
+  },
+  {
+    "vraag": "Wat is een ‘groendak’?",
+    "opties": ["Een dak met zonnepanelen", "Een dak met gras en planten", "Een dak van gerecycled metaal"],
+    "juist": "Een dak met gras en planten",
+    "weetje": "Groendaken zorgen voor verkoeling, wateropvang en betere luchtkwaliteit."
+  },
+  {
+    "vraag": "Waarom zijn LED-lampen beter voor het milieu dan gloeilampen?",
+    "opties": ["Ze geven geen licht", "Ze verbruiken veel stroom", "Ze gebruiken minder energie en gaan langer mee"],
+    "juist": "Ze gebruiken minder energie en gaan langer mee",
+    "weetje": "LED-lampen besparen tot 90% energie vergeleken met gewone lampen."
+  },
+  {
+    "vraag": "Wat betekent 'klimaatneutraal'?",
+    "opties": ["Je hebt geen mening over het klimaat", "Je hebt geen invloed op het weer", "Je veroorzaakt netto geen extra broeikasgassen"],
+    "juist": "Je veroorzaakt netto geen extra broeikasgassen",
+    "weetje": "Klimaatneutraal leven betekent dat je evenveel CO₂ opneemt of compenseert als je uitstoot."
+  },
+  {
+    "vraag": "Welk werelddeel verbruikt gemiddeld het meeste energie per persoon?",
+    "opties": ["Afrika", "Azië", "Noord-Amerika"],
+    "juist": "Noord-Amerika",
+    "weetje": "In landen als de VS ligt het energieverbruik per persoon veel hoger dan in andere werelddelen."
+  },
+  {
+    "vraag": "Wat is het broeikaseffect?",
+    "opties": ["Een kas voor tomaten", "Het opwarmen van de aarde door gassen in de atmosfeer", "Het effect van zonlicht op regen"],
+    "juist": "Het opwarmen van de aarde door gassen in de atmosfeer",
+    "weetje": "Broeikasgassen zoals CO₂ houden warmte vast in de atmosfeer, net als glas in een serre."
+  },
+
+
+
+  {
+    "vraag": "Wat is het grootste voordeel van bomen planten in steden?",
+    "opties": ["Meer bladeren op de grond", "Ze zorgen voor verkoeling en zuiveren de lucht", "Ze maken de stoep onzichtbaar"],
+    "juist": "Ze zorgen voor verkoeling en zuiveren de lucht",
+    "weetje": "Stadsbomen verminderen hittestress en verbeteren de luchtkwaliteit."
+  },
+  {
+    "vraag": "Wat gebeurt er als permafrost smelt?",
+    "opties": ["De grond wordt vruchtbaarder", "Er komt extra CO₂ en methaan vrij", "Er ontstaan bloemen"],
+    "juist": "Er komt extra CO₂ en methaan vrij",
+    "weetje": "Smeltende permafrost kan het klimaatprobleem versnellen."
+  },
+  {
+    "vraag": "Wat kun je het beste doen met kapotte kleren?",
+    "opties": ["Weggooien bij restafval", "Repareren of recycleren", "In de natuur leggen"],
+    "juist": "Repareren of recycleren",
+    "weetje": "Kleding hergebruiken bespaart grondstoffen en voorkomt afval."
+  },
+  {
+    "vraag": "Welke van deze sectoren veroorzaakt wereldwijd de meeste uitstoot?",
+    "opties": ["Landbouw", "Transport", "Energieproductie"],
+    "juist": "Energieproductie",
+    "weetje": "De productie van elektriciteit uit fossiele brandstoffen is een van de grootste bronnen van uitstoot."
+  },
+  {
+    "vraag": "Wat is biodiversiteit?",
+    "opties": ["Een type zonne-energie", "De variatie aan planten, dieren en micro-organismen", "Een soort compost"],
+    "juist": "De variatie aan planten, dieren en micro-organismen",
+    "weetje": "Hoe groter de biodiversiteit, hoe stabieler en gezonder het ecosysteem."
+  },
+  {
+    "vraag": "Welke planeet heeft ook een broeikaseffect, maar dan veel extremer?",
+    "opties": ["Mars", "Venus", "Jupiter"],
+    "juist": "Venus",
+    "weetje": "De temperatuur op Venus is extreem hoog door een dik deken van CO₂ in de atmosfeer."
+  },
+  {
+    "vraag": "Hoe draagt vegetarisch eten bij aan duurzaamheid?",
+    "opties": ["Het verbruikt minder water en grond", "Het maakt mensen langer", "Het zorgt voor meer CO₂"],
+    "juist": "Het verbruikt minder water en grond",
+    "weetje": "De productie van plantaardig voedsel vereist doorgaans minder hulpbronnen dan vleesproductie."
+  },
+  {
+    "vraag": "Wat is ‘circulaire economie’?",
+    "opties": ["Een economie waarin producten worden weggegooid", "Een economie zonder geld", "Een systeem waarin grondstoffen steeds opnieuw worden gebruikt"],
+    "juist": "Een systeem waarin grondstoffen steeds opnieuw worden gebruikt",
+    "weetje": "De circulaire economie wil afval tot een minimum beperken door hergebruik en recyclage."
+  },
+  {
+    "vraag": "Wat is een energieneutrale woning?",
+    "opties": ["Een woning zonder elektriciteit", "Een huis dat evenveel energie opwekt als verbruikt", "Een huis zonder ramen"],
+    "juist": "Een huis dat evenveel energie opwekt als verbruikt",
+    "weetje": "Energieneutrale huizen gebruiken vaak zonnepanelen en goede isolatie."
+  },
+  {
+    "vraag": "Wat is een biotoop?",
+    "opties": ["Een waterzuiveringsinstallatie", "Een leefgebied voor bepaalde soorten", "Een ander woord voor stad"],
+    "juist": "Een leefgebied voor bepaalde soorten",
+    "weetje": "Een biotoop biedt de juiste omstandigheden voor dieren en planten om te overleven."
+  },
+
+
+
+  {
+    "vraag": "Welk materiaal wordt vaak illegaal gekapt in tropische bossen?",
+    "opties": ["Mahonie", "Berkenhout", "Eik"],
+    "juist": "Mahonie",
+    "weetje": "Mahonie is waardevol hout, maar de kap ervan bedreigt regenwouden en biodiversiteit."
+  },
+  {
+    "vraag": "Wat betekent SDG?",
+    "opties": ["Superduurzaam gedrag", "Sustainable Development Goals", "Sterk Digitaal Gebeuren"],
+    "juist": "Sustainable Development Goals",
+    "weetje": "De SDG’s zijn 17 doelen van de Verenigde Naties voor een betere wereld tegen 2030."
+  },
+  {
+    "vraag": "Wat is het doel van SDG 15?",
+    "opties": ["Leven op het land beschermen", "Toerisme stimuleren", "Meer beton gebruiken"],
+    "juist": "Leven op het land beschermen",
+    "weetje": "SDG 15 wil bossen, biodiversiteit en ecosystemen beschermen en herstellen."
+  },
+  {
+    "vraag": "Hoe noem je een vissoort die met uitsterven bedreigd wordt?",
+    "opties": ["Overbevissing", "Een bedreigde soort", "Een seizoensvis"],
+    "juist": "Een bedreigde soort",
+    "weetje": "Door overbevissing en vervuiling raken veel vissoorten in de problemen."
+  },
+  {
+    "vraag": "Waarom zijn palmolieplantages vaak slecht voor het milieu?",
+    "opties": ["Ze ruiken slecht", "Ze vervangen regenwoud en bedreigen diersoorten", "Ze groeien te traag"],
+    "juist": "Ze vervangen regenwoud en bedreigen diersoorten",
+    "weetje": "Voor palmolie worden vaak grote stukken tropisch bos gekapt, wat schade veroorzaakt aan natuur en dieren."
+  },
+  {
+    "vraag": "Wat gebeurt er bij ‘overbevissing’?",
+    "opties": ["Er wordt te veel vis gevangen", "Vissen worden groter", "Er is meer vis beschikbaar"],
+    "juist": "Er wordt te veel vis gevangen",
+    "weetje": "Overbevissing kan vispopulaties uitputten en ecosystemen verstoren."
+  },
+  {
+    "vraag": "Wat is een voorbeeld van hernieuwbare energie?",
+    "opties": ["Steenkool", "Zonlicht", "Aardgas"],
+    "juist": "Zonlicht",
+    "weetje": "Zonlicht is een onuitputtelijke energiebron en stoot geen CO₂ uit."
+  },
+  {
+    "vraag": "Wat betekent ‘plasticsoep’?",
+    "opties": ["Een gerecht uit plastic kommen", "Een grote hoeveelheid plastic in de oceaan", "Soep in een plastic zak"],
+    "juist": "Een grote hoeveelheid plastic in de oceaan",
+    "weetje": "Plasticsoep is een drijvende verzameling afval die schadelijk is voor het zeeleven."
+  },
+    {
+    "vraag": "Wat is het effect van ontbossing op het klimaat?",
+    "opties": ["Het verlaagt de zeespiegel", "Het vermindert de hoeveelheid zuurstof in de lucht", "Het helpt tegen klimaatverandering"],
+    "juist": "Het vermindert de hoeveelheid zuurstof in de lucht",
+    "weetje": "Bomen nemen CO₂ op en produceren zuurstof. Minder bomen betekent meer CO₂ in de lucht en minder zuurstof."
+  },
+  {
+    "vraag": "Waarom is het belangrijk om water te besparen?",
+    "opties": ["Water is gratis", "Waterbronnen raken niet op", "Zo blijft er genoeg schoon water voor iedereen"],
+    "juist": "Zo blijft er genoeg schoon water voor iedereen",
+    "weetje": "Schoon drinkwater is schaars in veel delen van de wereld. Bewust watergebruik helpt tekorten voorkomen."
+  }
+]

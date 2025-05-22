@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/images/spelpagina.png'); /* Vervang met je afbeelding */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; /* Zet de richting op kolom = onder elkaar */;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
