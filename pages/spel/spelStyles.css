@@ -40,6 +40,24 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 600px) {
+  .vraag-container,
+  .antwoord-container {
+    max-width: 95%;
+    padding: 1rem;
+  }
+
+  .popup-content {
+    width: 95vw;
+    padding: 1rem;
+  }
+
+  .progress-wrapper {
+    max-width: 98vw;
+    margin: 20px auto;
+  }
+}
+
 #antwoorden {
   width: 100%;
 }
