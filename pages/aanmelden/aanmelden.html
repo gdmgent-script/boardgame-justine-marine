@@ -27,7 +27,7 @@
 
       <div id="continent2Div" style="display: none;">
         <label for="continent2">CONTINENT SPELER</label>
-        <select id="continent2" required>
+        <select id="continent2">
           <option value="">-- Kies een continent --</option>
         </select>
       </div>
@@ -123,6 +123,12 @@
         window.location.href = "../spel/spel.html";
       }
     });
+
+    if (aantalSpelers <= 3) {
+      continentSelect2.required = true;
+    } else {
+      continentSelect2.required = false;
+    }
   </script>
 </body>
 </html>

@@ -23,8 +23,10 @@ h1 {
 .players-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin: 2rem 0;
+  padding: 1rem;
 }
 
 .player-icon {
@@ -38,6 +40,19 @@ h1 {
   font-size: 1.5rem;
   border: 2px solid transparent;
   transition: background-color 0.3s, border 0.3s;
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+  .player-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
 }
 
 .player-icon:hover{
@@ -90,11 +105,19 @@ h1 {
 /* aanmeldpagina */
 
 .container {
-  width: 500px;
+  max-width: 500px;
   margin: auto;
   padding: 3rem;
   background-color:#cfdddf;
   border-radius: 7rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+  }
 }
 
 label {
