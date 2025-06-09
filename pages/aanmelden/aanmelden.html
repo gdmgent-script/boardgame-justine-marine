@@ -121,7 +121,7 @@
       localStorage.setItem('spelers', JSON.stringify(spelers));
 
       if (huidigeSpeler < aantalSpelers) {
-        // Stay on the same page, increment speler parameter
+        // Blijf op dezelfde pagina, verhoog de speler parameter
         window.location.href = `${window.location.pathname}?spelers=${aantalSpelers}&speler=${huidigeSpeler + 1}`;
       } else {
         // Start spel
@@ -129,7 +129,7 @@
       }
     });
 
-    // Update the required attribute for continent2 based on aantalSpelers
+    
     if (aantalSpelers <= 3) {
       continentSelect2.required = true;
     } else {

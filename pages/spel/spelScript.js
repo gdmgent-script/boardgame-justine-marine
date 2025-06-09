@@ -25,7 +25,7 @@ if (!baseUrl.includes("127.0.0.1")) {
 
 async function loadChildrenQuestions() {
     try {
-        // Fetch the JSON file containing children's questions
+        // Haal het JSON-bestand op met de vragen voor kinderen (onder de 15 jaar)
         const response = await fetch(baseUrl + '/assets/questions/childrenQuestions.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -33,14 +33,14 @@ async function loadChildrenQuestions() {
         const data = await response.json();
         return data;
     } catch (error) {
-                    // Handle any errors that occurred during the fetch
+        // Fout afhandelen die optrad tijdens het ophalen van de vragen
         console.error('There was a problem with the loadChildrenQuestions fetch:', error);
     }
 }
 
 async function loadAdultsQuestions() {
     try {
-                    // Fetch the JSON file containing adult questions
+        // Haal het JSON-bestand op met de vragen voor volwassenen (boven de 15 jaar)
         const response = await fetch(baseUrl + '/assets/questions/adultQuestions.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -48,26 +48,26 @@ async function loadAdultsQuestions() {
         const data = await response.json();
         return data;
     } catch (error) {
-                    // Handle any errors that occurred during the fetch
+        // Fout afhandelen die optrad tijdens het ophalen van de vragen
         console.error('There was a problem with the loadAdultsQuestions fetch:', error);
     }
 }
 
 function loadPlayers() {
-            // Load players from localStorage
+    // Laad spelers uit localStorage
     let spelers = JSON.parse(localStorage.getItem('spelers')) || [];
 
-            // Load aantalSpelers from localStorage
+    // Laad aantalSpelers uit localStorage
     const aantalSpelers = JSON.parse(localStorage.getItem("aantalSpelers"))
 
-            // Check if there are players, if not, return early
+    // Controleer of er spelers zijn, zo niet, keer vroegtijdig terug
     if (spelers.count <= 0) {
         //TODO geen spelers gevonden
         return
     }
 
-     // If there are less than 4 players, shuffle the order because every player has controls 2 continents
-        // and we want to make sure that the player order is x y x y
+    // Als er minder dan 4 spelers zijn, herschik dan de volgorde zodat elke speler 2 continenten heeft
+    // We willen ervoor zorgen dat de spelersvolgorde x y x y is
     if (aantalSpelers < 4) {
         let newOrder = [];
 
@@ -86,8 +86,8 @@ function loadPlayers() {
     return spelers;
 }
 
- // Get a random question based on the player's age
-    // and move to locig to show it on the screen
+// Haal een willekeurige vraag op gebaseerd op de leeftijd van de speler
+// en toon deze op het scherm
 function questionLogic(typeOfNext) {
     if (isAdult(players[currentPlayerIndex].leeftijd))
         currentQuestion = getRandomQuestion(adultQuestions, typeOfNext)
@@ -97,24 +97,24 @@ function questionLogic(typeOfNext) {
     showQuestion(currentQuestion);
 }
 
- // Check if the player is an adult based on their age
-const isAdult = age => age >= 18;
+// Controleer of de speler een volwassene is op basis van zijn/haar leeftijd
+const isAdult = leeftijd => leeftijd >= 18;
 
- // Get a random question from the list of questions
+// Haal een willekeurige vraag uit de lijst met vragen
 function getRandomQuestion(questionList, typeOfNext) {
     const max = questionList.length - 1;
     const randomIndex = Math.floor(Math.random() * (max - 0) + 0);
     let question = questionList[randomIndex];
-    // Remove question from the list if skipped
+    // Verwijder de vraag uit de lijst als deze wordt overgeslagen
     if (typeOfNext == "next")
         questionList.splice(randomIndex, 1);
 
     return question;
 }
 
-// Show the question on the screen
-    // Show the possible answers
-    // Start the timer for the question
+// Toon de vraag op het scherm
+// Toon de mogelijke antwoorden
+// Start de timer voor de vraag
 function showQuestion(question) {
     document.getElementById('spelerNaam').innerHTML = `<span class="vraag">Deze vraag is voor:<br> ${players[currentPlayerIndex].naam}  (${players[currentPlayerIndex].continent})</span>`;
     document.getElementById('vraagText').innerHTML = question.vraag;
@@ -130,7 +130,7 @@ function showQuestion(question) {
     startTimer(30);
 }
 
-// Create an option button for the answers
+// Maak een optieknop voor de antwoorden
 function createOption(option) {
     const optionElement = document.createElement('button');
     optionElement.classList.add('antwoord');
@@ -140,9 +140,9 @@ function createOption(option) {
     return optionElement
 }
 
-// Select an answer and highlight it
-    // If the same answer is selected again, deselect it
-    // If another answer is selected, highlight that one and deselect the previous one
+// Selecteer een antwoord en markeer het als geselecteerd
+// Als hetzelfde antwoord opnieuw wordt geselecteerd, deselecteer het
+// Als een ander antwoord wordt geselecteerd, markeer dat en deselecteer het vorige
 function selectAnswer(e) {
     selectedAnswer = e.target.value
     for (const child of antwoordenDiv.children) {
@@ -158,9 +158,9 @@ function selectAnswer(e) {
     }
 }
 
-// Start the timer for the question
-    // Update the progress bar and move the elephant
-    // When the time is up, check the answer
+// Start de timer voor de vraag
+// Update de voortgangsbalk en verplaats de olifant
+// Wanneer de tijd om is, controleer het antwoord
 function startTimer() {
     clearInterval(timerInterval);
 
@@ -168,10 +168,10 @@ function startTimer() {
         timeLeft--;
 
         const percentage = (timeLeft / duration) * 100;
-        // Update progress bar width
+        // Werk de breedte van de voortgangsbalk bij
         progressBar.style.width = `${percentage}%`;
 
-        // Move the elephant
+        // Verplaats de olifant
         elephant.style.right = `${100 - percentage}%`;
 
         if (timeLeft <= 0) {
@@ -181,7 +181,7 @@ function startTimer() {
     }, 1000);
 }
 
-// Stop the timer and reset the progress bar and elephant position
+// Stop de timer en reset de voortgangsbalk en olifantpositie
 function stopTimer() {
     timeLeft = duration;
     progressBar.style.width = "100%"
@@ -189,9 +189,9 @@ function stopTimer() {
     clearInterval(timerInterval);
 }
 
-// Check the answer
-    // Show the result and the correct answer
-    // Show more information about the question
+// Controleer het antwoord
+// Toon het resultaat en het juiste antwoord
+// Toon meer informatie over de vraag
 function checkAnswer(e) {
     stopTimer();
 
@@ -216,7 +216,7 @@ function checkAnswer(e) {
     showMoreInfo();
 }
 
-// Show more information about the question
+// Toon meer informatie over de vraag
 function showMoreInfo() {
 
     document.getElementById('wistjedatje').innerHTML =
@@ -224,7 +224,7 @@ function showMoreInfo() {
     document.getElementById('wistjedatjeImg').src = currentQuestion.img;
 }
 
-// Show the next question and give the turn to the next player
+// Toon de volgende vraag en geef de beurt aan de volgende speler
 function nextQuestion() {
     answerContainer.classList.remove("show");
     questionContainer.classList.add("show");
@@ -238,7 +238,7 @@ function nextQuestion() {
     questionLogic("next");
 }
 
-    // Give the turn to the next player
+// Geef de beurt aan de volgende speler
 function updateCurrentPlayer() {
     if (currentPlayerIndex + 1 <= players.length - 1)
         currentPlayerIndex += 1;
@@ -246,7 +246,7 @@ function updateCurrentPlayer() {
         currentPlayerIndex = 0;
 }
 
-// Skip the question and give the turn to the next player
+// Sla de vraag over en geef de beurt aan de volgende speler
 function skipQuestion() {
     selectedAnswer = "";
     updateCurrentPlayer();
@@ -255,7 +255,7 @@ function skipQuestion() {
     questionLogic("skipped");
 }
 
-//Disable all answers so the player can't select them anymore
+//Schakel alle antwoorden uit zodat de speler ze niet meer kan selecteren
 function disableAnswers() {
     var answers = document.querySelectorAll(".antwoord");
     answers.forEach(answer => {
@@ -263,19 +263,19 @@ function disableAnswers() {
     })
 }
 
-// Show the popup with the rules of the game
+// Toon de popup met de spelregels
 function openPopup() {
     popup.style.display = 'block';
     clearInterval(timerInterval);
 }
 
-// Close the popup and start the timer again
+// Sluit de popup en start de timer opnieuw
 function closePopup() {
     popup.style.display = 'none';
     startTimer();
 }
 
-// Initialize the game by loading players and questions
+// Begin het spel door spelers en vragen te laden
 async function init() {
     questionContainer = document.querySelector(".vraag-container");
     answerContainer = document.querySelector(".antwoord-container");

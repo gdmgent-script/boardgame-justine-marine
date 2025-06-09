@@ -1,3 +1,5 @@
+/* Deze file bevat de stijlen van de game interface */
+/* Algemene stijl */
 body {
   font-family: "poppins", sans-serif;
   font-weight: 600;
@@ -7,7 +9,7 @@ body {
   color: #3f1428;
 }
 
-
+/* Stijl van de startknop */
 .start-knop {
   color: #5b3348;
   background-color: #7ac1bc;
@@ -15,11 +17,13 @@ body {
   padding: 10px 20px;
 }
 
+/* Stijl van de header */
 h1 {
   color: #E65B27;
   font-size: 2rem;
 }
 
+/* Stijl van de container */
 .players-container {
   display: flex;
   justify-content: center;
@@ -29,6 +33,7 @@ h1 {
   padding: 1rem;
 }
 
+/* Stijl van de speler iconen */
 .player-icon {
   width: 50px;
   height: 50px;
@@ -42,6 +47,7 @@ h1 {
   transition: background-color 0.3s, border 0.3s;
 }
 
+/* Stijl voor goede weergave op kleinere schermen */
 @media (max-width: 600px) {
 
   h1 {
@@ -55,15 +61,18 @@ h1 {
   }
 }
 
+/* Hover effect voor speler iconen */
 .player-icon:hover{
   cursor: pointer;
 }
 
+/* Stijl voor geselecteerde speler iconen */
 .player-icon.selected {
   border: 2px solid #d4704f;
   background-color: #d4704f;
 }
 
+/* Stijl voor de knop */
 .button {
   font-family: "poppins", sans-serif;
   font-weight: 600;
@@ -78,18 +87,20 @@ h1 {
   transition: background-color 0.3s;
 }
 
+/* Stijl voor de knop bij hover */
 .button:hover {
   background-color: #d4704f;
   color: #3f1428;
 }
 
+/* Stijl voor de knop wanneer niet geactiveerd */
 .button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
-/* index */
-
+/* index pagina */
+/* Stijl voor de startknop */
 .start-knop {
   font-size: 24px;
   border: none;
@@ -98,12 +109,13 @@ h1 {
   transition: background-color 0.3s;
 }
 
+/* Stijl voor de startknop bij hover */
 .start-knop:hover {
   background-color: #d4704f;
 }
 
 /* aanmeldpagina */
-
+/* Stijl voor de container */
 .container {
   max-width: 500px;
   margin: auto;
@@ -111,7 +123,7 @@ h1 {
   background-color:#cfdddf;
   border-radius: 7rem;
 }
-
+/* Stijl voor de container op kleinere schermen */
 @media (max-width: 600px) {
   .container {
     padding: 1rem;
@@ -120,6 +132,7 @@ h1 {
   }
 }
 
+/* Stijl voor de labels en invoervelden */
 label {
   display: block;
   margin-top: 1rem;
@@ -127,6 +140,7 @@ label {
   color: #E65B27;
 }
 
+/* Stijl voor de invoervelden */
 input,
 select {
   font-family: "poppins", sans-serif;
