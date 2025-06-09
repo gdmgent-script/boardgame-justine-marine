@@ -1,638 +1,1002 @@
 [
-    {
-      "vraag": "Wie schreef 'De Leeuw van Vlaanderen'?",
-      "opties": ["Hugo Claus", "Guido Gezelle", "Hendrik Conscience", "Multatuli"],
-      "juist": "Hendrik Conscience",
-      "weetje": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec sapien ante. Aenean tincidunt sodales finibus. Maecenas vehicula porttitor dolor quis cursus. Phasellus porttitor fermentum mollis. Aliquam at semper felis. Nam quis commodo enim. Suspendisse vitae tincidunt lorem, vitae dapibus libero.",
-      "img": "data:image/jpeg;base64,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"
-    },
-
-    
-
-   {
+  {
     "vraag": "Wat is het belangrijkste doel van het Akkoord van Parijs?",
-    "opties": ["Meer toerisme in Frankrijk", "Klimaatverandering versnellen", "De opwarming van de aarde beperken tot ruim onder 2°C"],
+    "opties": [
+      "Meer toerisme in Frankrijk",
+      "Klimaatverandering versnellen",
+      "De opwarming van de aarde beperken tot ruim onder 2°C"
+    ],
     "juist": "De opwarming van de aarde beperken tot ruim onder 2°C",
     "weetje": "Het Akkoord van Parijs werd in 2015 ondertekend door bijna alle landen om de klimaatverandering gezamenlijk aan te pakken."
   },
   {
     "vraag": "Wat is het verschil tussen CO₂ en CH₄ als broeikasgas?",
-    "opties": ["CH₄ is veel sterker als broeikasgas", "CO₂ is gevaarlijker voor dieren", "Ze hebben geen invloed op het klimaat"],
+    "opties": [
+      "CH₄ is veel sterker als broeikasgas",
+      "CO₂ is gevaarlijker voor dieren",
+      "Ze hebben geen invloed op het klimaat"
+    ],
     "juist": "CH₄ is veel sterker als broeikasgas",
     "weetje": "Methaan (CH₄) is ongeveer 25 keer krachtiger dan CO₂, maar blijft minder lang in de atmosfeer."
   },
   {
     "vraag": "Wat is de grootste oorzaak van biodiversiteitsverlies wereldwijd?",
-    "opties": ["Natuurlijke evolutie", "Klimaatverandering", "Menselijke activiteiten zoals ontbossing en landbouw"],
+    "opties": [
+      "Natuurlijke evolutie",
+      "Klimaatverandering",
+      "Menselijke activiteiten zoals ontbossing en landbouw"
+    ],
     "juist": "Menselijke activiteiten zoals ontbossing en landbouw",
     "weetje": "Door ontbossing, vervuiling en intensieve landbouw verdwijnen leefgebieden van dieren en planten."
   },
   {
     "vraag": "Wat is ‘carbon capture and storage’ (CCS)?",
-    "opties": ["Het opslaan van koolstof in bomen", "Een techniek om CO₂ op te vangen en ondergronds op te slaan", "Een methode om kolen te verbranden"],
+    "opties": [
+      "Het opslaan van koolstof in bomen",
+      "Een techniek om CO₂ op te vangen en ondergronds op te slaan",
+      "Een methode om kolen te verbranden"
+    ],
     "juist": "Een techniek om CO₂ op te vangen en ondergronds op te slaan",
     "weetje": "CCS wordt onderzocht als tijdelijke oplossing om CO₂-uitstoot te verminderen bij industriële processen."
   },
   {
     "vraag": "Wat betekent 'duurzame energie'?",
-    "opties": ["Energie die altijd beschikbaar is en het milieu niet schaadt", "Energie uit fossiele brandstoffen", "Energie die maar kort meegaat"],
+    "opties": [
+      "Energie die altijd beschikbaar is en het milieu niet schaadt",
+      "Energie uit fossiele brandstoffen",
+      "Energie die maar kort meegaat"
+    ],
     "juist": "Energie die altijd beschikbaar is en het milieu niet schaadt",
     "weetje": "Voorbeelden zijn zonne-, wind- en waterkrachtenergie."
   },
   {
     "vraag": "Wat is ‘ecocide’?",
-    "opties": ["Het vernietigen van ecosystemen op grote schaal", "Het uitroeien van exotische planten", "Een vorm van landbouw"],
+    "opties": [
+      "Het vernietigen van ecosystemen op grote schaal",
+      "Het uitroeien van exotische planten",
+      "Een vorm van landbouw"
+    ],
     "juist": "Het vernietigen van ecosystemen op grote schaal",
     "weetje": "Er wordt internationaal gepleit om ecocide als misdaad tegen de planeet strafbaar te maken."
   },
   {
     "vraag": "Wat zijn ‘klimaatmodellen’?",
-    "opties": ["Voorspellingen van het weer voor morgen", "Simulaties van hoe het klimaat verandert onder verschillende scenario’s", "Weermodellen voor televisie"],
+    "opties": [
+      "Voorspellingen van het weer voor morgen",
+      "Simulaties van hoe het klimaat verandert onder verschillende scenario’s",
+      "Weermodellen voor televisie"
+    ],
     "juist": "Simulaties van hoe het klimaat verandert onder verschillende scenario’s",
     "weetje": "Wetenschappers gebruiken klimaatmodellen om toekomstige veranderingen te voorspellen op basis van data en beleid."
   },
   {
     "vraag": "Wat is het verband tussen vleesconsumptie en klimaatverandering?",
-    "opties": ["Er is geen verband", "Vleesproductie veroorzaakt veel uitstoot van broeikasgassen", "Vlees helpt tegen klimaatverandering"],
+    "opties": [
+      "Er is geen verband",
+      "Vleesproductie veroorzaakt veel uitstoot van broeikasgassen",
+      "Vlees helpt tegen klimaatverandering"
+    ],
     "juist": "Vleesproductie veroorzaakt veel uitstoot van broeikasgassen",
     "weetje": "Vooral rundvleesproductie leidt tot hoge uitstoot van methaan, ontbossing en waterverbruik."
   },
   {
     "vraag": "Wat betekent 'netto nul uitstoot'?",
-    "opties": ["Geen energie meer gebruiken", "Evenveel uitstoot veroorzaken als opnemen", "Alle CO₂ uit de lucht verwijderen"],
+    "opties": [
+      "Geen energie meer gebruiken",
+      "Evenveel uitstoot veroorzaken als opnemen",
+      "Alle CO₂ uit de lucht verwijderen"
+    ],
     "juist": "Evenveel uitstoot veroorzaken als opnemen",
     "weetje": "Netto nul is het uiteindelijke klimaatdoel waarbij uitstoot wordt gecompenseerd of vermeden."
   },
   {
     "vraag": "Wat is een 'klimaatadaptatiemaatregel'?",
-    "opties": ["Een maatregel om het klimaat te veranderen", "Een aanpassing aan gevolgen van klimaatverandering", "Een klimaatprotest"],
+    "opties": [
+      "Een maatregel om het klimaat te veranderen",
+      "Een aanpassing aan gevolgen van klimaatverandering",
+      "Een klimaatprotest"
+    ],
     "juist": "Een aanpassing aan gevolgen van klimaatverandering",
     "weetje": "Voorbeelden zijn dijken bouwen tegen overstromingen en hittebestendige steden ontwerpen."
   },
-
-
-
   {
     "vraag": "Wat is het risico van ‘klimaatvertraging’ of ‘klimaatuitstel’?",
-    "opties": ["Er verandert niks", "De gevolgen van klimaatverandering worden erger", "Het weer wordt stabieler"],
+    "opties": [
+      "Er verandert niks",
+      "De gevolgen van klimaatverandering worden erger",
+      "Het weer wordt stabieler"
+    ],
     "juist": "De gevolgen van klimaatverandering worden erger",
     "weetje": "Uitstel van klimaatactie maakt het moeilijker en duurder om doelstellingen te halen."
   },
   {
     "vraag": "Wat betekent 'cradle to cradle'-ontwerp?",
-    "opties": ["Van wieg tot graf", "Producten worden zo ontworpen dat alle materialen herbruikbaar zijn", "Gebruiken en weggooien"],
+    "opties": [
+      "Van wieg tot graf",
+      "Producten worden zo ontworpen dat alle materialen herbruikbaar zijn",
+      "Gebruiken en weggooien"
+    ],
     "juist": "Producten worden zo ontworpen dat alle materialen herbruikbaar zijn",
     "weetje": "Het is een circulair ontwerpprincipe waarbij afval geen afval is, maar grondstof."
   },
   {
     "vraag": "Wat is 'greenwashing'?",
-    "opties": ["Bedrijven die zich groener voordoen dan ze zijn", "Milieuvriendelijke producten wassen", "Een groene kleur op producten"],
+    "opties": [
+      "Bedrijven die zich groener voordoen dan ze zijn",
+      "Milieuvriendelijke producten wassen",
+      "Een groene kleur op producten"
+    ],
     "juist": "Bedrijven die zich groener voordoen dan ze zijn",
     "weetje": "Greenwashing misleidt consumenten en ondermijnt echte duurzaamheid."
   },
   {
     "vraag": "Waarom zijn oceanen belangrijk voor het klimaat?",
-    "opties": ["Ze reflecteren zonlicht", "Ze slaan grote hoeveelheden CO₂ en warmte op", "Ze veroorzaken regen"],
+    "opties": [
+      "Ze reflecteren zonlicht",
+      "Ze slaan grote hoeveelheden CO₂ en warmte op",
+      "Ze veroorzaken regen"
+    ],
     "juist": "Ze slaan grote hoeveelheden CO₂ en warmte op",
     "weetje": "Oceanen fungeren als natuurlijke buffers voor temperatuur en broeikasgassen."
   },
   {
     "vraag": "Wat is het effect van smeltend zee-ijs op de zeespiegel?",
-    "opties": ["De zeespiegel stijgt sterk", "Geen effect", "Het maakt de oceanen kouder"],
+    "opties": [
+      "De zeespiegel stijgt sterk",
+      "Geen effect",
+      "Het maakt de oceanen kouder"
+    ],
     "juist": "Geen effect",
     "weetje": "Smeltend zee-ijs verandert het volume van water niet, maar smeltend landijs doet dat wel."
   },
   {
     "vraag": "Wat is een 'klimaatvluchteling'?",
-    "opties": ["Een persoon die klimaatonderzoek doet", "Iemand die verhuist door milieuproblemen", "Iemand die bang is voor weerberichten"],
+    "opties": [
+      "Een persoon die klimaatonderzoek doet",
+      "Iemand die verhuist door milieuproblemen",
+      "Iemand die bang is voor weerberichten"
+    ],
     "juist": "Iemand die verhuist door milieuproblemen",
     "weetje": "Extreme droogte, stormen of overstromingen dwingen steeds meer mensen om hun thuis te verlaten."
   },
   {
     "vraag": "Welke sector gebruikt wereldwijd het meeste zoet water?",
-    "opties": ["Huishoudens", "Industrie", "Landbouw"],
+    "opties": [
+      "Huishoudens",
+      "Industrie",
+      "Landbouw"
+    ],
     "juist": "Landbouw",
     "weetje": "Zo’n 70% van al het beschikbare zoet water wordt gebruikt voor irrigatie van gewassen."
   },
   {
     "vraag": "Wat is 'milieu-impact'?",
-    "opties": ["Positieve verandering in het klimaat", "De invloed van menselijke activiteiten op het milieu", "Een meteorietinslag"],
+    "opties": [
+      "Positieve verandering in het klimaat",
+      "De invloed van menselijke activiteiten op het milieu",
+      "Een meteorietinslag"
+    ],
     "juist": "De invloed van menselijke activiteiten op het milieu",
     "weetje": "Productie, transport en consumptie hebben allemaal gevolgen voor lucht, water, bodem en biodiversiteit."
   },
   {
     "vraag": "Wat is 'natuurinclusief bouwen'?",
-    "opties": ["Bouwen zonder vergunning", "Bouwen met aandacht voor de natuur en biodiversiteit", "Bouwen zonder beton"],
+    "opties": [
+      "Bouwen zonder vergunning",
+      "Bouwen met aandacht voor de natuur en biodiversiteit",
+      "Bouwen zonder beton"
+    ],
     "juist": "Bouwen met aandacht voor de natuur en biodiversiteit",
     "weetje": "Bij natuur-inclusief bouwen worden groendaken, nestkasten of gevelgroen geïntegreerd in het ontwerp."
   },
   {
     "vraag": "Wat is het doel van de Europese Green Deal?",
-    "opties": ["Europa aantrekkelijker maken voor toeristen", "Europa klimaatneutraal maken tegen 2050", "Meer energie gebruiken"],
+    "opties": [
+      "Europa aantrekkelijker maken voor toeristen",
+      "Europa klimaatneutraal maken tegen 2050",
+      "Meer energie gebruiken"
+    ],
     "juist": "Europa klimaatneutraal maken tegen 2050",
     "weetje": "De Green Deal is een pakket maatregelen om economie, energie, landbouw en industrie duurzamer te maken."
   },
-
-
-
   {
     "vraag": "Welke energiebron heeft de kleinste ecologische voetafdruk?",
-    "opties": ["Zonne-energie", "Aardgas", "Steenkool"],
+    "opties": [
+      "Zonne-energie",
+      "Aardgas",
+      "Steenkool"
+    ],
     "juist": "Zonne-energie",
     "weetje": "Zonnepanelen wekken energie op zonder directe uitstoot en verbruiken relatief weinig grondstoffen per opgewekte kWh."
   },
   {
     "vraag": "Wat is een belangrijke reden waarom het gebruik van plastic problematisch is?",
-    "opties": ["Het is te licht", "Het vergaat niet en vervuilt ecosystemen", "Het smelt te snel"],
+    "opties": [
+      "Het is te licht",
+      "Het vergaat niet en vervuilt ecosystemen",
+      "Het smelt te snel"
+    ],
     "juist": "Het vergaat niet en vervuilt ecosystemen",
     "weetje": "Plastic breekt niet volledig af, maar valt uiteen in microplastics die jarenlang in het milieu blijven."
   },
   {
     "vraag": "Wat wordt bedoeld met ‘de aarde overschrijdt haar draagkracht’?",
-    "opties": ["Er zijn te veel planeten", "De natuurlijke hulpbronnen worden sneller verbruikt dan ze zich herstellen", "De aarde beweegt sneller"],
+    "opties": [
+      "Er zijn te veel planeten",
+      "De natuurlijke hulpbronnen worden sneller verbruikt dan ze zich herstellen",
+      "De aarde beweegt sneller"
+    ],
     "juist": "De natuurlijke hulpbronnen worden sneller verbruikt dan ze zich herstellen",
     "weetje": "We gebruiken meer water, grond en energie dan de aarde jaarlijks kan aanvullen."
   },
   {
     "vraag": "Wat betekent ‘de energietransitie’?",
-    "opties": ["Van kolen naar kernenergie gaan", "Overschakelen van fossiele naar hernieuwbare energiebronnen", "Stoppen met energie gebruiken"],
+    "opties": [
+      "Van kolen naar kernenergie gaan",
+      "Overschakelen van fossiele naar hernieuwbare energiebronnen",
+      "Stoppen met energie gebruiken"
+    ],
     "juist": "Overschakelen van fossiele naar hernieuwbare energiebronnen",
     "weetje": "De energietransitie is nodig om de klimaatdoelstellingen te behalen en de CO₂-uitstoot te verminderen."
   },
   {
     "vraag": "Wat is een duurzaam alternatief voor pesticiden in de landbouw?",
-    "opties": ["Natuurlijke vijanden inzetten", "Meer spuiten", "Planten verbranden"],
+    "opties": [
+      "Natuurlijke vijanden inzetten",
+      "Meer spuiten",
+      "Planten verbranden"
+    ],
     "juist": "Natuurlijke vijanden inzetten",
     "weetje": "Bij biologische landbouw worden bijvoorbeeld lieveheersbeestjes gebruikt om bladluizen te bestrijden."
   },
   {
     "vraag": "Wat betekent de term 'true cost' in duurzaamheid?",
-    "opties": ["De echte prijs inclusief milieu- en sociale schade", "De prijs na korting", "De goedkoopste optie"],
+    "opties": [
+      "De echte prijs inclusief milieu- en sociale schade",
+      "De prijs na korting",
+      "De goedkoopste optie"
+    ],
     "juist": "De echte prijs inclusief milieu- en sociale schade",
     "weetje": "True cost accounting rekent ook de verborgen kosten van vervuiling, arbeidsomstandigheden en uitputting van hulpbronnen mee."
   },
   {
     "vraag": "Wat is het verschil tussen weer en klimaat?",
-    "opties": ["Weer is lokaal en tijdelijk, klimaat is langdurig en mondiaal", "Klimaat gaat over kleding", "Er is geen verschil"],
+    "opties": [
+      "Weer is lokaal en tijdelijk, klimaat is langdurig en mondiaal",
+      "Klimaat gaat over kleding",
+      "Er is geen verschil"
+    ],
     "juist": "Weer is lokaal en tijdelijk, klimaat is langdurig en mondiaal",
     "weetje": "Het klimaat is het gemiddelde weer over 30 jaar of langer in een bepaald gebied."
   },
   {
     "vraag": "Welke van deze gedragingen helpt het meeste bij het verkleinen van je ecologische voetafdruk?",
-    "opties": ["Lampen uitdoen", "Minder vlees eten", "Planten water geven"],
+    "opties": [
+      "Lampen uitdoen",
+      "Minder vlees eten",
+      "Planten water geven"
+    ],
     "juist": "Minder vlees eten",
     "weetje": "Vleesproductie heeft een hoge impact op landgebruik, uitstoot en waterverbruik."
   },
   {
     "vraag": "Wat is de grootste bron van fijnstof in steden?",
-    "opties": ["Industrie", "Verkeer", "Bosbranden"],
+    "opties": [
+      "Industrie",
+      "Verkeer",
+      "Bosbranden"
+    ],
     "juist": "Verkeer",
     "weetje": "Auto’s stoten niet alleen uitlaatgassen uit, maar ook fijnstof door slijtage van banden en remmen."
   },
   {
     "vraag": "Wat betekent 'hervergroening'?",
-    "opties": ["Meer gras maaien", "Het herstellen van natuur in dorre of verwoeste gebieden", "Kunstgras aanleggen"],
+    "opties": [
+      "Meer gras maaien",
+      "Het herstellen van natuur in dorre of verwoeste gebieden",
+      "Kunstgras aanleggen"
+    ],
     "juist": "Het herstellen van natuur in dorre of verwoeste gebieden",
     "weetje": "Hervergroening helpt om bodems te herstellen, erosie tegen te gaan en biodiversiteit terug te brengen."
   },
-
-
-
   {
     "vraag": "Wat is 'duurzame mobiliteit'?",
-    "opties": ["Een auto op diesel", "Vervoer met lage milieu-impact", "Zoveel mogelijk reizen"],
+    "opties": [
+      "Een auto op diesel",
+      "Vervoer met lage milieu-impact",
+      "Zoveel mogelijk reizen"
+    ],
     "juist": "Vervoer met lage milieu-impact",
     "weetje": "Fietsen, wandelen, openbaar vervoer of elektrische deelmobiliteit zijn voorbeelden van duurzame mobiliteit."
   },
   {
     "vraag": "Wat is een nadeel van intensieve veeteelt?",
-    "opties": ["Meer melkproductie", "Grotere uitstoot van broeikasgassen", "Betere dierenwelzijn"],
+    "opties": [
+      "Meer melkproductie",
+      "Grotere uitstoot van broeikasgassen",
+      "Betere dierenwelzijn"
+    ],
     "juist": "Grotere uitstoot van broeikasgassen",
     "weetje": "Intensieve veeteelt zorgt ook voor stikstofuitstoot, bodemverarming en dierenleed."
   },
   {
     "vraag": "Waarom zijn bijen belangrijk voor de landbouw?",
-    "opties": ["Ze eten insecten", "Ze bestuiven gewassen", "Ze maken honing voor de planten"],
+    "opties": [
+      "Ze eten insecten",
+      "Ze bestuiven gewassen",
+      "Ze maken honing voor de planten"
+    ],
     "juist": "Ze bestuiven gewassen",
     "weetje": "Zonder bijen zouden veel fruit- en groentesoorten niet kunnen groeien."
   },
   {
     "vraag": "Wat is een klimaatrechtvaardigheidsprobleem?",
-    "opties": ["Iedereen heeft er evenveel last van", "Sommige landen dragen minder bij aan het probleem maar lijden er het meest onder", "Het klimaat verandert niet overal"],
+    "opties": [
+      "Iedereen heeft er evenveel last van",
+      "Sommige landen dragen minder bij aan het probleem maar lijden er het meest onder",
+      "Het klimaat verandert niet overal"
+    ],
     "juist": "Sommige landen dragen minder bij aan het probleem maar lijden er het meest onder",
     "weetje": "Vaak worden ontwikkelingslanden het hardst getroffen, terwijl rijke landen historisch het meest uitstootten."
   },
   {
     "vraag": "Wat betekent ‘waterstress’?",
-    "opties": ["Te veel regen op één dag", "Niet genoeg schoon water beschikbaar", "Stress door zwemles"],
+    "opties": [
+      "Te veel regen op één dag",
+      "Niet genoeg schoon water beschikbaar",
+      "Stress door zwemles"
+    ],
     "juist": "Niet genoeg schoon water beschikbaar",
     "weetje": "Waterstress treft al miljarden mensen wereldwijd en wordt verergerd door klimaatverandering en vervuiling."
   },
   {
     "vraag": "Wat betekent het als een product ‘biologisch afbreekbaar’ is?",
-    "opties": ["Het valt uiteen in milieuvriendelijke stoffen", "Het smaakt beter", "Het mag in de natuur worden gegooid"],
+    "opties": [
+      "Het valt uiteen in milieuvriendelijke stoffen",
+      "Het smaakt beter",
+      "Het mag in de natuur worden gegooid"
+    ],
     "juist": "Het valt uiteen in milieuvriendelijke stoffen",
     "weetje": "Biologisch afbreekbare producten breken af zonder schadelijke stoffen achter te laten, maar dat betekent niet dat ze in de natuur thuishoren."
   },
   {
     "vraag": "Wat is de oorzaak van koraalverbleking?",
-    "opties": ["Te veel vissen", "Hoge watertemperaturen door opwarming", "Zouttekort"],
+    "opties": [
+      "Te veel vissen",
+      "Hoge watertemperaturen door opwarming",
+      "Zouttekort"
+    ],
     "juist": "Hoge watertemperaturen door opwarming",
     "weetje": "Door temperatuurstijging sterven de algen in het koraal, waardoor het verbleekt en verzwakt."
   },
   {
     "vraag": "Wat is een smart grid in energiebeheer?",
-    "opties": ["Een netwerk van slimme energiemeters", "Een manier om auto's sneller op te laden", "Een methode om energie uit kolen op te slaan"],
+    "opties": [
+      "Een netwerk van slimme energiemeters",
+      "Een manier om auto's sneller op te laden",
+      "Een methode om energie uit kolen op te slaan"
+    ],
     "juist": "Een netwerk van slimme energiemeters",
     "weetje": "Een smart grid stemt vraag en aanbod beter op elkaar af, wat hernieuwbare energie efficiënter maakt."
   },
   {
     "vraag": "Wat is 'milieuvervuiling door fast fashion'?",
-    "opties": ["Kleding die niet past", "Kleding die vaak gewassen moet worden", "Snelle kledingproductie die leidt tot afval, vervuiling en overconsumptie"],
+    "opties": [
+      "Kleding die niet past",
+      "Kleding die vaak gewassen moet worden",
+      "Snelle kledingproductie die leidt tot afval, vervuiling en overconsumptie"
+    ],
     "juist": "Snelle kledingproductie die leidt tot afval, vervuiling en overconsumptie",
     "weetje": "Fast fashion gebruikt veel water, chemicaliën en energie – en kleding wordt vaak snel weer weggegooid."
   },
   {
     "vraag": "Welke rol speelt educatie in duurzame ontwikkeling?",
-    "opties": ["Geen rol", "Mensen leren hoe ze bewuste keuzes kunnen maken", "Het zorgt voor meer energieverbruik"],
+    "opties": [
+      "Geen rol",
+      "Mensen leren hoe ze bewuste keuzes kunnen maken",
+      "Het zorgt voor meer energieverbruik"
+    ],
     "juist": "Mensen leren hoe ze bewuste keuzes kunnen maken",
     "weetje": "Onderwijs over duurzaamheid stimuleert kritisch denken en verantwoordelijkheid bij jongeren."
   },
-
-
   {
     "vraag": "Wat zijn microplastics?",
-    "opties": ["Microscopisch kleine stukjes plastic die in het milieu terechtkomen", "Plastic dat krimpt in de was", "Mini-verpakkingen van plastic"],
+    "opties": [
+      "Microscopisch kleine stukjes plastic die in het milieu terechtkomen",
+      "Plastic dat krimpt in de was",
+      "Mini-verpakkingen van plastic"
+    ],
     "juist": "Microscopisch kleine stukjes plastic die in het milieu terechtkomen",
     "weetje": "Microplastics zitten in cosmetica, kleding en ontstaan bij slijtage van plastic voorwerpen."
   },
   {
     "vraag": "Waarom is ontbossing slecht voor het klimaat?",
-    "opties": ["Bomen maken lawaai", "Bomen slaan CO₂ op en hun verlies verhoogt de uitstoot", "Bossen veroorzaken stormen"],
+    "opties": [
+      "Bomen maken lawaai",
+      "Bomen slaan CO₂ op en hun verlies verhoogt de uitstoot",
+      "Bossen veroorzaken stormen"
+    ],
     "juist": "Bomen slaan CO₂ op en hun verlies verhoogt de uitstoot",
     "weetje": "Bomen zijn natuurlijke koolstofopslagplaatsen en essentieel voor een stabiel klimaat."
   },
   {
     "vraag": "Wat is de SDG-agenda van de Verenigde Naties?",
-    "opties": ["Een plan om de economie te versterken", "Een lijst met 17 duurzame ontwikkelingsdoelen", "Een handelsovereenkomst"],
+    "opties": [
+      "Een plan om de economie te versterken",
+      "Een lijst met 17 duurzame ontwikkelingsdoelen",
+      "Een handelsovereenkomst"
+    ],
     "juist": "Een lijst met 17 duurzame ontwikkelingsdoelen",
     "weetje": "De SDG’s (Sustainable Development Goals) zijn doelen voor 2030 rond armoede, klimaat, gezondheid en gelijkheid."
   },
   {
     "vraag": "Wat betekent circulaire economie?",
-    "opties": ["Een economie gebaseerd op hergebruik en recyclage", "Een economie zonder geld", "Een economie waar alles draait om snelheid"],
+    "opties": [
+      "Een economie gebaseerd op hergebruik en recyclage",
+      "Een economie zonder geld",
+      "Een economie waar alles draait om snelheid"
+    ],
     "juist": "Een economie gebaseerd op hergebruik en recyclage",
     "weetje": "In een circulaire economie bestaat er geen afval, want alles wordt opnieuw ingezet."
   },
   {
     "vraag": "Welke hernieuwbare energiebron is het meest afhankelijk van het weer?",
-    "opties": ["Windenergie", "Kernenergie", "Aardwarmte"],
+    "opties": [
+      "Windenergie",
+      "Kernenergie",
+      "Aardwarmte"
+    ],
     "juist": "Windenergie",
     "weetje": "Windturbines produceren alleen energie als het hard genoeg waait."
   },
   {
     "vraag": "Wat is ‘klimaatmitigatie’?",
-    "opties": ["Aanpassing aan hitte", "Het beperken van de oorzaken van klimaatverandering", "Het verhogen van temperaturen"],
+    "opties": [
+      "Aanpassing aan hitte",
+      "Het beperken van de oorzaken van klimaatverandering",
+      "Het verhogen van temperaturen"
+    ],
     "juist": "Het beperken van de oorzaken van klimaatverandering",
     "weetje": "Voorbeelden zijn CO₂-reductie, energiebesparing en hernieuwbare energie."
   },
   {
     "vraag": "Waarom zijn wetlands belangrijk voor het milieu?",
-    "opties": ["Ze zijn mooie toeristische plekken", "Ze slaan CO₂ op en filteren water", "Ze verhogen de droogte"],
+    "opties": [
+      "Ze zijn mooie toeristische plekken",
+      "Ze slaan CO₂ op en filteren water",
+      "Ze verhogen de droogte"
+    ],
     "juist": "Ze slaan CO₂ op en filteren water",
     "weetje": "Moerassen en veengebieden zijn belangrijke natuurlijke koolstofreservoirs en leefgebieden voor dieren."
   },
   {
     "vraag": "Welke industrie is wereldwijd een van de grootste vervuilers?",
-    "opties": ["Technologie", "Mode", "Bouw"],
+    "opties": [
+      "Technologie",
+      "Mode",
+      "Bouw"
+    ],
     "juist": "Mode",
     "weetje": "De kledingindustrie verbruikt veel water en energie en stoot meer CO₂ uit dan alle luchtvaart en scheepvaart samen."
   },
   {
     "vraag": "Wat is het verschil tussen upcycling en recycling?",
-    "opties": ["Upcycling is voor kleding, recycling voor papier", "Recycling breekt af, upcycling maakt iets nieuws van hetzelfde materiaal", "Ze betekenen hetzelfde"],
+    "opties": [
+      "Upcycling is voor kleding, recycling voor papier",
+      "Recycling breekt af, upcycling maakt iets nieuws van hetzelfde materiaal",
+      "Ze betekenen hetzelfde"
+    ],
     "juist": "Recycling breekt af, upcycling maakt iets nieuws van hetzelfde materiaal",
     "weetje": "Upcycling verhoogt de waarde van afval door het een nieuwe functie te geven, zoals een oude fiets ombouwen tot lamp."
   },
   {
     "vraag": "Wat doet de ozonlaag?",
-    "opties": ["Ze beschermt tegen koude", "Ze filtert schadelijke uv-stralen van de zon", "Ze veroorzaakt regen"],
+    "opties": [
+      "Ze beschermt tegen koude",
+      "Ze filtert schadelijke uv-stralen van de zon",
+      "Ze veroorzaakt regen"
+    ],
     "juist": "Ze filtert schadelijke uv-stralen van de zon",
     "weetje": "De ozonlaag is cruciaal voor het leven op aarde en werd bedreigd door CFK’s, die nu grotendeels verboden zijn."
   },
-
-
-
   {
     "vraag": "Waarom is stikstofuitstoot een probleem in de landbouw?",
-    "opties": ["Het zorgt voor lekkere groenten", "Het vervuilt lucht en natuur", "Het versterkt planten"],
+    "opties": [
+      "Het zorgt voor lekkere groenten",
+      "Het vervuilt lucht en natuur",
+      "Het versterkt planten"
+    ],
     "juist": "Het vervuilt lucht en natuur",
     "weetje": "Een teveel aan stikstof leidt tot verlies van biodiversiteit en verzuring van de bodem."
   },
   {
     "vraag": "Wat is 'duurzaam consumeren'?",
-    "opties": ["Alles nieuw kopen", "Producten kiezen met respect voor mens, dier en milieu", "Meer kopen dan je nodig hebt"],
+    "opties": [
+      "Alles nieuw kopen",
+      "Producten kiezen met respect voor mens, dier en milieu",
+      "Meer kopen dan je nodig hebt"
+    ],
     "juist": "Producten kiezen met respect voor mens, dier en milieu",
     "weetje": "Duurzaam consumeren betekent bewust kiezen, minder verspillen en aandacht hebben voor productieketens."
   },
   {
     "vraag": "Wat zijn de gevolgen van oceaanverzuring?",
-    "opties": ["Meer vissen", "Moeilijker voor schelpdieren om kalkskeletten te maken", "Snellere golfstromen"],
+    "opties": [
+      "Meer vissen",
+      "Moeilijker voor schelpdieren om kalkskeletten te maken",
+      "Snellere golfstromen"
+    ],
     "juist": "Moeilijker voor schelpdieren om kalkskeletten te maken",
     "weetje": "CO₂ lost op in zee en maakt het water zuurder, wat koralen en schelpdieren beschadigt."
   },
   {
     "vraag": "Wat is een ecologische voetafdruk?",
-    "opties": ["De afdruk van je schoenen", "De hoeveelheid aarde die nodig is om jouw levensstijl te ondersteunen", "De CO₂ die je inademt"],
+    "opties": [
+      "De afdruk van je schoenen",
+      "De hoeveelheid aarde die nodig is om jouw levensstijl te ondersteunen",
+      "De CO₂ die je inademt"
+    ],
     "juist": "De hoeveelheid aarde die nodig is om jouw levensstijl te ondersteunen",
     "weetje": "Hoe meer je consumeert en uitstoot, hoe groter je voetafdruk."
   },
   {
     "vraag": "Wat is 'energie-efficiëntie'?",
-    "opties": ["Zo weinig mogelijk energie gebruiken voor hetzelfde resultaat", "Zoveel mogelijk energie opwekken", "Energie inpakken"],
+    "opties": [
+      "Zo weinig mogelijk energie gebruiken voor hetzelfde resultaat",
+      "Zoveel mogelijk energie opwekken",
+      "Energie inpakken"
+    ],
     "juist": "Zo weinig mogelijk energie gebruiken voor hetzelfde resultaat",
     "weetje": "Energie-efficiënte apparaten verbruiken minder en zijn dus beter voor het milieu én je energiefactuur."
   },
   {
     "vraag": "Wat is het doel van herbebossing?",
-    "opties": ["Meer hout produceren", "CO₂ opnemen en biodiversiteit herstellen", "Bossen vervangen door steden"],
+    "opties": [
+      "Meer hout produceren",
+      "CO₂ opnemen en biodiversiteit herstellen",
+      "Bossen vervangen door steden"
+    ],
     "juist": "CO₂ opnemen en biodiversiteit herstellen",
     "weetje": "Herbebossing helpt bij klimaatmitigatie en het herstel van natuurgebieden."
   },
   {
     "vraag": "Wat betekent ‘duurzame visserij’?",
-    "opties": ["Zoveel mogelijk vissen vangen", "Vis vangen zonder schade aan ecosystemen", "Vis vangen met netten van plastic"],
+    "opties": [
+      "Zoveel mogelijk vissen vangen",
+      "Vis vangen zonder schade aan ecosystemen",
+      "Vis vangen met netten van plastic"
+    ],
     "juist": "Vis vangen zonder schade aan ecosystemen",
     "weetje": "Duurzame visserij houdt rekening met vispopulaties en voorkomt overbevissing."
   },
   {
     "vraag": "Wat betekent 'zero waste'?",
-    "opties": ["Zonder eten", "Leven zonder afval te produceren", "Afval in zee gooien"],
+    "opties": [
+      "Zonder eten",
+      "Leven zonder afval te produceren",
+      "Afval in zee gooien"
+    ],
     "juist": "Leven zonder afval te produceren",
     "weetje": "Zero waste betekent hergebruiken, repareren en afval vermijden waar mogelijk."
   },
   {
     "vraag": "Waarom is lokale voeding duurzamer?",
-    "opties": ["Het smaakt anders", "Er is minder transport nodig en het ondersteunt lokale boeren", "Het is altijd biologisch"],
+    "opties": [
+      "Het smaakt anders",
+      "Er is minder transport nodig en het ondersteunt lokale boeren",
+      "Het is altijd biologisch"
+    ],
     "juist": "Er is minder transport nodig en het ondersteunt lokale boeren",
     "weetje": "Lokale producten hebben vaak een lagere ecologische voetafdruk door korte ketens."
   },
   {
     "vraag": "Wat doet een CO₂-compensatieprogramma?",
-    "opties": ["Het vermindert direct je uitstoot", "Het compenseert uitstoot via projecten zoals bomen planten", "Het verhoogt je uitstoot"],
+    "opties": [
+      "Het vermindert direct je uitstoot",
+      "Het compenseert uitstoot via projecten zoals bomen planten",
+      "Het verhoogt je uitstoot"
+    ],
     "juist": "Het compenseert uitstoot via projecten zoals bomen planten",
     "weetje": "Compensatie is geen vervanging van uitstootvermindering, maar een aanvulling."
   },
-
-
   {
     "vraag": "Wat is de grootste oorzaak van het verdwijnen van diersoorten wereldwijd?",
-    "opties": ["Ziektes", "Verlies van leefgebied door menselijke activiteiten", "Klimaatverandering"],
+    "opties": [
+      "Ziektes",
+      "Verlies van leefgebied door menselijke activiteiten",
+      "Klimaatverandering"
+    ],
     "juist": "Verlies van leefgebied door menselijke activiteiten",
     "weetje": "Ontbossing, landbouw en verstedelijking zijn grote oorzaken van leefgebiedverlies."
   },
   {
     "vraag": "Wat is 'slow fashion'?",
-    "opties": ["Kleding die traag wordt geleverd", "Duurzame en eerlijke kledingproductie", "Vintage kleding dragen"],
+    "opties": [
+      "Kleding die traag wordt geleverd",
+      "Duurzame en eerlijke kledingproductie",
+      "Vintage kleding dragen"
+    ],
     "juist": "Duurzame en eerlijke kledingproductie",
     "weetje": "Slow fashion staat tegenover fast fashion en richt zich op kwaliteit, ethiek en ecologie."
   },
   {
     "vraag": "Hoe draagt vleesproductie bij aan de klimaatopwarming?",
-    "opties": ["Door overbevissing", "Door methaanuitstoot van vee en ontbossing", "Door gebruik van plastic verpakkingen"],
+    "opties": [
+      "Door overbevissing",
+      "Door methaanuitstoot van vee en ontbossing",
+      "Door gebruik van plastic verpakkingen"
+    ],
     "juist": "Door methaanuitstoot van vee en ontbossing",
     "weetje": "Runderen stoten methaan uit en weilanden vereisen vaak ontbossing."
   },
   {
     "vraag": "Wat betekent 'klimaatadaptatie'?",
-    "opties": ["Aanpassen aan de gevolgen van klimaatverandering", "Het tegengaan van klimaatverandering", "Natuur vernietigen"],
+    "opties": [
+      "Aanpassen aan de gevolgen van klimaatverandering",
+      "Het tegengaan van klimaatverandering",
+      "Natuur vernietigen"
+    ],
     "juist": "Aanpassen aan de gevolgen van klimaatverandering",
     "weetje": "Voorbeelden zijn dijken bouwen, hitteplannen en droogteresistente gewassen."
   },
   {
     "vraag": "Wat zijn broeikasgassen?",
-    "opties": ["Gassen die het klimaat afkoelen", "Gassen die warmte vasthouden in de atmosfeer", "Gassen die alleen in kassen voorkomen"],
+    "opties": [
+      "Gassen die het klimaat afkoelen",
+      "Gassen die warmte vasthouden in de atmosfeer",
+      "Gassen die alleen in kassen voorkomen"
+    ],
     "juist": "Gassen die warmte vasthouden in de atmosfeer",
     "weetje": "CO₂, methaan en lachgas zijn bekende broeikasgassen die bijdragen aan de opwarming van de aarde."
   },
   {
     "vraag": "Waarom is biodiversiteit belangrijk?",
-    "opties": ["Voor variatie in huisdieren", "Voor stabiele ecosystemen en voedselzekerheid", "Voor meer toerisme"],
+    "opties": [
+      "Voor variatie in huisdieren",
+      "Voor stabiele ecosystemen en voedselzekerheid",
+      "Voor meer toerisme"
+    ],
     "juist": "Voor stabiele ecosystemen en voedselzekerheid",
     "weetje": "Een hoge biodiversiteit maakt ecosystemen veerkrachtiger tegen ziektes en klimaatverandering."
   },
   {
     "vraag": "Wat is het verschil tussen hernieuwbare en niet-hernieuwbare energie?",
-    "opties": ["Hernieuwbare energie raakt niet op, niet-hernieuwbare wel", "Niet-hernieuwbare energie is gratis", "Ze worden op dezelfde manier opgewekt"],
+    "opties": [
+      "Hernieuwbare energie raakt niet op, niet-hernieuwbare wel",
+      "Niet-hernieuwbare energie is gratis",
+      "Ze worden op dezelfde manier opgewekt"
+    ],
     "juist": "Hernieuwbare energie raakt niet op, niet-hernieuwbare wel",
     "weetje": "Wind, zon en water zijn hernieuwbaar. Steenkool en aardolie raken uitgeput."
   },
   {
     "vraag": "Waarom zijn elektrische auto's duurzamer dan auto's op benzine?",
-    "opties": ["Ze rijden sneller", "Ze stoten geen uitlaatgassen uit tijdens het rijden", "Ze verbruiken meer energie"],
+    "opties": [
+      "Ze rijden sneller",
+      "Ze stoten geen uitlaatgassen uit tijdens het rijden",
+      "Ze verbruiken meer energie"
+    ],
     "juist": "Ze stoten geen uitlaatgassen uit tijdens het rijden",
     "weetje": "Hoewel de productie intensief is, veroorzaken ze minder luchtvervuiling tijdens gebruik."
   },
   {
     "vraag": "Wat is 'ecodesign'?",
-    "opties": ["Een modetrend", "Producten ontwerpen met minimale impact op het milieu", "Een stijl van interieur"],
+    "opties": [
+      "Een modetrend",
+      "Producten ontwerpen met minimale impact op het milieu",
+      "Een stijl van interieur"
+    ],
     "juist": "Producten ontwerpen met minimale impact op het milieu",
     "weetje": "Bij ecodesign wordt rekening gehouden met materialen, productie, gebruik en afvalfase."
   },
   {
     "vraag": "Wat is de impact van palmolie op het milieu?",
-    "opties": ["Het is gezond voor je huid", "Het zorgt voor grootschalige ontbossing", "Het is makkelijk te vervoeren"],
+    "opties": [
+      "Het is gezond voor je huid",
+      "Het zorgt voor grootschalige ontbossing",
+      "Het is makkelijk te vervoeren"
+    ],
     "juist": "Het zorgt voor grootschalige ontbossing",
     "weetje": "Palmolie is in veel producten aanwezig, maar de teelt leidt vaak tot verlies van regenwoud."
   },
-
-
-
   {
     "vraag": "Hoe helpt vegetarisch eten het klimaat?",
-    "opties": ["Er is minder landbouwgrond nodig", "Er ontstaat meer CO₂", "Er is meer water nodig"],
+    "opties": [
+      "Er is minder landbouwgrond nodig",
+      "Er ontstaat meer CO₂",
+      "Er is meer water nodig"
+    ],
     "juist": "Er is minder landbouwgrond nodig",
     "weetje": "Plantaardige voeding vereist minder grond, water en energie dan vleesproductie."
   },
   {
     "vraag": "Wat is het grootste deel van huishoudelijk afval in Europa?",
-    "opties": ["Plastic", "Organisch afval", "Papier"],
+    "opties": [
+      "Plastic",
+      "Organisch afval",
+      "Papier"
+    ],
     "juist": "Organisch afval",
     "weetje": "Organisch afval zoals etensresten en tuinafval maken een groot deel uit van het afval in gezinnen."
   },
   {
     "vraag": "Wat is 'duurzaam toerisme'?",
-    "opties": ["Reizen zonder paspoort", "Toerisme met aandacht voor natuur, cultuur en lokale economie", "Goedkope vliegtickets boeken"],
+    "opties": [
+      "Reizen zonder paspoort",
+      "Toerisme met aandacht voor natuur, cultuur en lokale economie",
+      "Goedkope vliegtickets boeken"
+    ],
     "juist": "Toerisme met aandacht voor natuur, cultuur en lokale economie",
     "weetje": "Duurzaam toerisme probeert negatieve effecten van reizen te beperken en positieve effecten te versterken."
   },
   {
     "vraag": "Wat is een ecoduct?",
-    "opties": ["Een buis voor windenergie", "Een brug voor dieren over een snelweg", "Een irrigatiesysteem"],
+    "opties": [
+      "Een buis voor windenergie",
+      "Een brug voor dieren over een snelweg",
+      "Een irrigatiesysteem"
+    ],
     "juist": "Een brug voor dieren over een snelweg",
     "weetje": "Ecoducten verbinden natuurgebieden en helpen dieren veilig migreren."
   },
   {
     "vraag": "Waarom is water een schaars goed?",
-    "opties": ["Omdat het verdampt", "Omdat slechts een klein deel zoetwater is", "Omdat mensen het vergeten drinken"],
+    "opties": [
+      "Omdat het verdampt",
+      "Omdat slechts een klein deel zoetwater is",
+      "Omdat mensen het vergeten drinken"
+    ],
     "juist": "Omdat slechts een klein deel zoetwater is",
     "weetje": "Slechts 2,5% van al het water op aarde is zoet, en daarvan is het meeste bevroren."
   },
   {
     "vraag": "Wat is 'urban farming'?",
-    "opties": ["Landbouw op het platteland", "Voedselproductie in en rond steden", "Boerderijdieren houden in flatgebouwen"],
+    "opties": [
+      "Landbouw op het platteland",
+      "Voedselproductie in en rond steden",
+      "Boerderijdieren houden in flatgebouwen"
+    ],
     "juist": "Voedselproductie in en rond steden",
     "weetje": "Urban farming kan voedselverspilling verminderen en mensen meer verbinden met voeding."
   },
   {
     "vraag": "Wat is de belangrijkste oorzaak van stijgende zeespiegels?",
-    "opties": ["Meer boten op zee", "Smeltende ijskappen en warm uitzettend water", "Toenemende regenval"],
+    "opties": [
+      "Meer boten op zee",
+      "Smeltende ijskappen en warm uitzettend water",
+      "Toenemende regenval"
+    ],
     "juist": "Smeltende ijskappen en warm uitzettend water",
     "weetje": "Warm zeewater zet uit en smeltwater uit gletsjers en poolkappen verhoogt de zeespiegel."
   },
   {
     "vraag": "Wat is ‘deeleconomie’?",
-    "opties": ["Alles verkopen aan anderen", "Het delen van producten en diensten via netwerken", "Samen winkelen"],
+    "opties": [
+      "Alles verkopen aan anderen",
+      "Het delen van producten en diensten via netwerken",
+      "Samen winkelen"
+    ],
     "juist": "Het delen van producten en diensten via netwerken",
     "weetje": "Voorbeelden zijn autodelen, woningdelen (zoals Airbnb) en gereedschapbibliotheken."
   },
   {
     "vraag": "Wat is de impact van lichtvervuiling op de natuur?",
-    "opties": ["Het is sfeervol voor dieren", "Het verstoort het gedrag van dieren", "Het zorgt voor extra zonlicht"],
+    "opties": [
+      "Het is sfeervol voor dieren",
+      "Het verstoort het gedrag van dieren",
+      "Het zorgt voor extra zonlicht"
+    ],
     "juist": "Het verstoort het gedrag van dieren",
     "weetje": "Lichtvervuiling beïnvloedt nachtactieve dieren, de voortplanting en migratiepatronen."
   },
   {
     "vraag": "Wat kan je doen om je digitale ecologische voetafdruk te verkleinen?",
-    "opties": ["Meer mailen", "Onnodige bestanden verwijderen en minder streamen", "Altijd je telefoon opladen"],
+    "opties": [
+      "Meer mailen",
+      "Onnodige bestanden verwijderen en minder streamen",
+      "Altijd je telefoon opladen"
+    ],
     "juist": "Onnodige bestanden verwijderen en minder streamen",
     "weetje": "Data-opslag en streamen verbruiken veel energie in datacentra."
   },
-
-
   {
     "vraag": "Wat is 'greenwashing'?",
-    "opties": ["Een schoonmaakmethode met planten", "Een marketingtruc om producten milieuvriendelijker te laten lijken dan ze zijn", "Het reinigen van bossen na een storm"],
+    "opties": [
+      "Een schoonmaakmethode met planten",
+      "Een marketingtruc om producten milieuvriendelijker te laten lijken dan ze zijn",
+      "Het reinigen van bossen na een storm"
+    ],
     "juist": "Een marketingtruc om producten milieuvriendelijker te laten lijken dan ze zijn",
     "weetje": "Bedrijven gebruiken soms vage termen of groene kleuren om milieuvriendelijkheid te suggereren zonder echte inspanningen."
   },
   {
     "vraag": "Welke sector stoot wereldwijd de meeste broeikasgassen uit?",
-    "opties": ["Transport", "Landbouw", "Energieproductie"],
+    "opties": [
+      "Transport",
+      "Landbouw",
+      "Energieproductie"
+    ],
     "juist": "Energieproductie",
     "weetje": "Energie uit fossiele brandstoffen (zoals kolen en olie) is verantwoordelijk voor ongeveer 73% van de wereldwijde uitstoot."
   },
   {
     "vraag": "Wat betekent 'biologisch afbreekbaar'?",
-    "opties": ["Het product breekt vanzelf af in de natuur", "Het product is gemaakt van plastic", "Het product is biologisch geteeld"],
+    "opties": [
+      "Het product breekt vanzelf af in de natuur",
+      "Het product is gemaakt van plastic",
+      "Het product is biologisch geteeld"
+    ],
     "juist": "Het product breekt vanzelf af in de natuur",
     "weetje": "Biologisch afbreekbare materialen worden door bacteriën en schimmels afgebroken zonder schadelijke resten."
   },
   {
     "vraag": "Wat is de belangrijkste functie van bijen in ecosystemen?",
-    "opties": ["Honing maken", "Bestuiven van planten", "Afval opruimen"],
+    "opties": [
+      "Honing maken",
+      "Bestuiven van planten",
+      "Afval opruimen"
+    ],
     "juist": "Bestuiven van planten",
     "weetje": "Bijen zorgen voor de voortplanting van bloemen, groenten en fruit door bestuiving."
   },
   {
     "vraag": "Wat is een duurzame manier om water te besparen thuis?",
-    "opties": ["Dagelijks bad nemen", "De kraan laten lopen tijdens het tandenpoetsen", "Gebruik maken van een spaardouchekop"],
+    "opties": [
+      "Dagelijks bad nemen",
+      "De kraan laten lopen tijdens het tandenpoetsen",
+      "Gebruik maken van een spaardouchekop"
+    ],
     "juist": "Gebruik maken van een spaardouchekop",
     "weetje": "Spaardouchekoppen kunnen het waterverbruik met 30 tot 50% verminderen zonder comfortverlies."
   },
   {
     "vraag": "Wat is het belangrijkste doel van de klimaattop van de VN (COP)?",
-    "opties": ["Landen bijeenbrengen om samen te dansen", "Landen laten onderhandelen over klimaatmaatregelen", "Landen helpen met economische groei"],
+    "opties": [
+      "Landen bijeenbrengen om samen te dansen",
+      "Landen laten onderhandelen over klimaatmaatregelen",
+      "Landen helpen met economische groei"
+    ],
     "juist": "Landen laten onderhandelen over klimaatmaatregelen",
     "weetje": "De jaarlijkse COP-top brengt wereldleiders samen om afspraken te maken over klimaatdoelen en samenwerking."
   },
   {
     "vraag": "Welke van deze producten heeft meestal de laagste ecologische voetafdruk?",
-    "opties": ["Rundsvlees", "Kip", "Linzen"],
+    "opties": [
+      "Rundsvlees",
+      "Kip",
+      "Linzen"
+    ],
     "juist": "Linzen",
     "weetje": "Peulvruchten zoals linzen verbruiken weinig water en stoten nauwelijks broeikasgassen uit."
   },
   {
     "vraag": "Wat doet een windturbine?",
-    "opties": ["Zuurstof aanmaken", "Wind vangen voor verkoeling", "Windenergie omzetten in elektriciteit"],
+    "opties": [
+      "Zuurstof aanmaken",
+      "Wind vangen voor verkoeling",
+      "Windenergie omzetten in elektriciteit"
+    ],
     "juist": "Windenergie omzetten in elektriciteit",
     "weetje": "Moderne windturbines kunnen duizenden huishoudens van stroom voorzien zonder CO₂-uitstoot."
   },
   {
     "vraag": "Wat gebeurt er bij verzuring van de oceaan?",
-    "opties": ["Het water wordt minder zout", "Het water wordt warmer", "Het water wordt zuurder door opname van CO₂"],
+    "opties": [
+      "Het water wordt minder zout",
+      "Het water wordt warmer",
+      "Het water wordt zuurder door opname van CO₂"
+    ],
     "juist": "Het water wordt zuurder door opname van CO₂",
     "weetje": "Door meer CO₂ in de atmosfeer neemt de oceaan dit op, wat het water zuurder maakt en het leven onder water bedreigt."
   },
   {
     "vraag": "Wat betekent de term ‘klimaatvluchteling’?",
-    "opties": ["Iemand die wegvlucht van slecht weer", "Iemand die verhuist voor werk", "Iemand die zijn land verlaat door gevolgen van klimaatverandering"],
+    "opties": [
+      "Iemand die wegvlucht van slecht weer",
+      "Iemand die verhuist voor werk",
+      "Iemand die zijn land verlaat door gevolgen van klimaatverandering"
+    ],
     "juist": "Iemand die zijn land verlaat door gevolgen van klimaatverandering",
     "weetje": "Door droogte, overstromingen of zeespiegelstijging verliezen miljoenen mensen hun leefgebied."
   },
-
-
-
   {
     "vraag": "Wat is 'de 3 R's' in duurzaamheid?",
-    "opties": ["Recycle, Reduce, Reuse", "Ride, Run, Rest", "Recycle, Renew, React"],
+    "opties": [
+      "Recycle, Reduce, Reuse",
+      "Ride, Run, Rest",
+      "Recycle, Renew, React"
+    ],
     "juist": "Recycle, Reduce, Reuse",
     "weetje": "Deze strategieën helpen om afval te verminderen en grondstoffen efficiënter te gebruiken."
   },
   {
     "vraag": "Waarom is het belangrijk om lokale seizoensgroenten te eten?",
-    "opties": ["Ze zijn zeldzamer", "Ze hebben een lagere ecologische voetafdruk", "Ze zijn altijd goedkoper"],
+    "opties": [
+      "Ze zijn zeldzamer",
+      "Ze hebben een lagere ecologische voetafdruk",
+      "Ze zijn altijd goedkoper"
+    ],
     "juist": "Ze hebben een lagere ecologische voetafdruk",
     "weetje": "Seizoensgroenten hoeven niet in verwarmde serres of van ver te worden vervoerd."
   },
   {
     "vraag": "Wat is het verschil tussen een hybride en een elektrische auto?",
-    "opties": ["Hybrides rijden alleen op elektriciteit", "Elektrische auto’s gebruiken geen benzine", "Elektrische auto’s hebben een dieselmotor"],
+    "opties": [
+      "Hybrides rijden alleen op elektriciteit",
+      "Elektrische auto’s gebruiken geen benzine",
+      "Elektrische auto’s hebben een dieselmotor"
+    ],
     "juist": "Elektrische auto’s gebruiken geen benzine",
     "weetje": "Hybrides combineren een verbrandingsmotor met een batterij, elektrische auto’s rijden puur op elektriciteit."
   },
   {
     "vraag": "Wat is een 'klimaatneutraal' product?",
-    "opties": ["Het veroorzaakt geen uitstoot of compenseert dit volledig", "Het is gemaakt van plastic", "Het is gemaakt in een koud land"],
+    "opties": [
+      "Het veroorzaakt geen uitstoot of compenseert dit volledig",
+      "Het is gemaakt van plastic",
+      "Het is gemaakt in een koud land"
+    ],
     "juist": "Het veroorzaakt geen uitstoot of compenseert dit volledig",
     "weetje": "Klimaatneutrale producten balanceren hun uitstoot via hernieuwbare energie en compensatieprojecten."
   },
   {
     "vraag": "Wat is een voorbeeld van passieve zonne-energie?",
-    "opties": ["Zonnepanelen installeren", "Een huis oriënteren naar de zon", "Een zonneboiler gebruiken"],
+    "opties": [
+      "Zonnepanelen installeren",
+      "Een huis oriënteren naar de zon",
+      "Een zonneboiler gebruiken"
+    ],
     "juist": "Een huis oriënteren naar de zon",
     "weetje": "Passieve zonne-energie gebruikt zonlicht zonder mechanische systemen, zoals grote ramen op het zuiden."
   },
   {
     "vraag": "Wat is het broeikaseffect?",
-    "opties": ["Een kas die warm wordt", "De opwarming van de aarde door vastgehouden zonnewarmte", "Een stijging van UV-straling"],
+    "opties": [
+      "Een kas die warm wordt",
+      "De opwarming van de aarde door vastgehouden zonnewarmte",
+      "Een stijging van UV-straling"
+    ],
     "juist": "De opwarming van de aarde door vastgehouden zonnewarmte",
     "weetje": "Het broeikaseffect is natuurlijk, maar door extra broeikasgassen versterkt het en warmt de aarde op."
   },
   {
     "vraag": "Hoe kun je thuis energie besparen?",
-    "opties": ["Apparaten op stand-by laten", "Gloeilampen gebruiken", "LED-lampen en isolatie toepassen"],
+    "opties": [
+      "Apparaten op stand-by laten",
+      "Gloeilampen gebruiken",
+      "LED-lampen en isolatie toepassen"
+    ],
     "juist": "LED-lampen en isolatie toepassen",
     "weetje": "LED-lampen verbruiken tot 80% minder energie dan gloeilampen, en isolatie voorkomt warmteverlies."
   },
   {
     "vraag": "Wat is cradle-to-cradle design?",
-    "opties": ["Producten die eindigen op de afvalberg", "Een product zonder verpakking", "Een ontwerp waarbij alle materialen herbruikbaar zijn"],
+    "opties": [
+      "Producten die eindigen op de afvalberg",
+      "Een product zonder verpakking",
+      "Een ontwerp waarbij alle materialen herbruikbaar zijn"
+    ],
     "juist": "Een ontwerp waarbij alle materialen herbruikbaar zijn",
     "weetje": "Bij cradle-to-cradle worden producten ontworpen zonder afval: alles wordt opnieuw grondstof."
   },
   {
     "vraag": "Waarom is overbevissing een probleem?",
-    "opties": ["Er zijn dan te veel vissen", "Het verstoort mariene ecosystemen", "Het zorgt voor meer toerisme"],
+    "opties": [
+      "Er zijn dan te veel vissen",
+      "Het verstoort mariene ecosystemen",
+      "Het zorgt voor meer toerisme"
+    ],
     "juist": "Het verstoort mariene ecosystemen",
     "weetje": "Overbevissing leidt tot het instorten van vispopulaties en beschadiging van oceanen."
   },
   {
     "vraag": "Wat kun je het beste doen met kleding die je niet meer draagt?",
-    "opties": ["Weggooien", "Verbranden", "Doneren of hergebruiken"],
+    "opties": [
+      "Weggooien",
+      "Verbranden",
+      "Doneren of hergebruiken"
+    ],
     "juist": "Doneren of hergebruiken",
     "weetje": "Tweedehandskleding verlengt de levensduur van textiel en vermindert afval en productie."
   }
-
-
-  ]
+]

@@ -42,24 +42,25 @@
     const form = document.getElementById('aanmeldForm');
     const queryParams = new URLSearchParams(window.location.search);
     
+    // Haal aantal spelers en huidige speler op uit de URL parameters
     let spelers = JSON.parse(localStorage.getItem('spelers')) || [];
     const aantalSpelers = parseInt(queryParams.get('spelers'), 10);
     localStorage.setItem("aantalSpelers", aantalSpelers);
     let huidigeSpeler = parseInt(queryParams.get('speler'), 10) || 1;
     
     const allContinents = ["Afrika" ,"Antarctica","Azië","Europa","Noord-Amerika","Zuid-Amerika","Oceanië"];
+    // Haal de continenten op die al gekozen zijn
     const pickedContinents = new Set(spelers.map(player => player.continent));
+    // Filter de continenten die al gekozen zijn
+    // en maak een nieuwe array van de overgebleven continenten
     const availableContinents = allContinents.filter(continent => !pickedContinents.has(continent));
-
     
     const continentSelect1 = document.getElementById("continent");
     const continentSelect2 = document.getElementById("continent2");
     
-    // continentSelect1.addEventListener("change", () => syncSelects(continentSelect1, continentSelect2))
-    // continentSelect2.addEventListener("change", () => syncSelects(continentSelect2, continentSelect1))
-    
     setupSelects(aantalSpelers);
 
+    // Vul de continenten dropdowns en verberg de tweede als er meer dan 3 spelers zijn
     function setupSelects(playersCount) {
       fillContinents(continentSelect1, null);
       if (aantalSpelers > 3) {
@@ -70,6 +71,7 @@
       }
     };
 
+    // Vul de continenten dropdowns met de beschikbare continenten
     function fillContinents(dropdown, selectedContinent){
       dropdown.innerHTML = `<option value="">-- Kies een continent --</option>`;
       
@@ -95,6 +97,9 @@
 
     document.getElementById('titel').innerText = `AANMELDEN SPELER ${huidigeSpeler}`;
 
+    // Voeg event listener toe aan het formulier
+    // Bij het indienen van het formulier, voeg de speler toe en ga naar de volgende speler
+    // of start het spel als alle spelers zijn toegevoegd
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
@@ -124,6 +129,7 @@
       }
     });
 
+    // Update the required attribute for continent2 based on aantalSpelers
     if (aantalSpelers <= 3) {
       continentSelect2.required = true;
     } else {
