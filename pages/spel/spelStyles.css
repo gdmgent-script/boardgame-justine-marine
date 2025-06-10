@@ -33,11 +33,12 @@ body {
   font-size: 1.2rem;
 }
 
+/* Class die gebruikt word om secties zichtbaar en onzichtbaar te maken */
 .show {
   display: block !important;
 }
 
-/* Stijl van de container voor de vraag en antwoorden */
+/* Stijl van de container voor de vragen */
 .vraag-container {
   display: none;
   background: white;
@@ -51,7 +52,8 @@ body {
 #antwoorden {
   width: 100%;
 }
-/* Stijl van de antwoorden */
+
+/* Stijl van de antwoord elementen */
 .antwoord {
   all: unset;
   width: calc(100% - 2rem);
@@ -63,16 +65,18 @@ body {
   cursor: pointer;
 }
 
+/* Stijl van antwoord elementen die disabled zijn */
 .antwoord[disabled] {
   background-color: gray
 }
 
-/* Stijl van de antwoorden bij selectie */
+/* Stijl van een antwoord element dat geselecteerd is */
 .antwoord.selected {
   background-color: #825366;
   border: 2px solid #1b4332;
 }
 
+/* Stijl van de container voor de antwoorden */
 .antwoord-container {
   display: none;
   background: #ffffff;
@@ -132,6 +136,7 @@ button:hover {
   margin: 50px auto;
 }
 
+/* Stijl van de progressiebalk container */
 .progress-container {
   width: 100%;
   height: 20px;
@@ -141,6 +146,7 @@ button:hover {
   position: relative;
 }
 
+/* Stijl van de progressiebalk */
 .progress-bar {
   height: 100%;
   background-color: #e55525;
@@ -149,7 +155,7 @@ button:hover {
   transform-origin: right;
 }
 
-/* stijl van het olifantje */
+/* Stijl van het olifantje */
 .elephant {
   position: absolute;
   top: -30px;
@@ -158,7 +164,7 @@ button:hover {
   transition: right 1s linear;
 }
 
-/* stijl van de pop up knop */
+/* Stijl voor de pop up knop */
 .popup-button {
   position: fixed;
   bottom: 20px;
@@ -173,8 +179,7 @@ button:hover {
   z-index: 1000;
 }
 
-/* stijl van de popup */
-
+/* Stijl voor de popup een overlay te maken */
 .popup-overlay {
   display: none;
   position: absolute;
@@ -188,6 +193,7 @@ button:hover {
   padding: 1rem;
 }
 
+/* Stijl voor de popup content */
 .popup-content {
   background-color: white;
   padding: 20px;
@@ -196,7 +202,7 @@ button:hover {
   overflow: scroll;
 }
 
-/* stijl van de sluitknop van de pop-up */
+/* Stijl van de sluitknop van de pop-up */
 .close-button {
   position: absolute;
   right: 2rem;
